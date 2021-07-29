@@ -1,0 +1,33 @@
+button {
+  color: $colors--typography;
+  border-radius: 1.6rem;
+  font-size: 1rem;
+  padding: $btn-padding-horizontal $btn-padding-vertical;
+  cursor: pointer;
+  border: 1px solid $colors--typography;
+}
+
+.btn {
+
+  &__square {
+    border-radius: 8px;
+    padding: 0.5rem 1.8rem;
+  }
+
+  &__first {
+    background-color: $colors__button--first;
+  }
+
+  &__second {
+    background-color: transparent;
+  }
+
+  &__img {
+    position: relative;
+    padding-right: #{$btn-padding-horizontal + 2rem};
+
+    &--right-arrow {
+        @include btn-image($btn-icon__path--right-arrow);
+      }
+    }
+}

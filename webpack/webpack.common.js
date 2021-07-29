@@ -25,7 +25,7 @@ module.exports = {
             ],
         }),
         new HtmlWebpackPlugin({
-            title: 'Генератор таблицы',
+            title: 'КМЛ',
             template: paths.src + '/template.html',
             filename: 'index.html',
             minify: {

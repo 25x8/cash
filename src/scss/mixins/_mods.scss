@@ -1,0 +1,9 @@
+@mixin create-padding-top() {
+    $padding: 0.5rem;
+    @for $i from 1 through 6 {
+      $padding: $padding + 1;
+        .mode__pt--#{$i} {
+            padding-top: $padding;
+        }
+    }
+}

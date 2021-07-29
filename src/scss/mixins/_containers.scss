@@ -1,0 +1,26 @@
+@mixin column-create {
+  @for $i from 1 through 12 {
+    &__col--#{$i} {
+      width: #{100% / 12 * $i};
+    }
+  }
+}
+
+@mixin grid-create {
+  &__grid {
+
+    display: grid;
+    gap: 2rem;
+
+    $i: 5;
+    @each $size, $breakpoint in $breakpoints {
+      $i: $i - 1;
+      @if($i == 0) {
+        $i: 1
+      }
+      @include breakpoint-down($size) {
+        grid-template-columns: repeat($i, 1fr);
+      }
+    }
+  }
+}

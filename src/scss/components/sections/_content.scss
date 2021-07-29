@@ -1,0 +1,21 @@
+.content {
+
+    &__top {
+
+        > * {
+            max-width: calc(#{(map-get($container-max-widths, "lg") / 2) - 1} - #{$container-gutter * 2});
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    &__products {
+        padding-top: 4rem;
+    }
+
+
+}

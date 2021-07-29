@@ -1,0 +1,10 @@
+.mode__flex {
+    display: flex;
+}
+
+.mode__center {
+    justify-content: center;
+}
+
+
+@include create-padding-top();

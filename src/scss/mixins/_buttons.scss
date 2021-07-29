@@ -1,0 +1,13 @@
+@mixin btn-image($url) {
+
+  &:after {
+    content: '';
+    background-image: $url;
+    width: $btn-icon__size;
+    height: $btn-icon__size;
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

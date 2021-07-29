@@ -1,0 +1,31 @@
+.container {
+
+  &-def {
+    padding-left: $container-gutter;
+    padding-right: $container-gutter;
+    margin-left: auto;
+    margin-right: auto;
+
+    @each $size, $breakpoint in $breakpoints {
+      @include breakpoint-down($size) {
+        max-width: map-get($container-max-widths, $size);
+      }
+    }
+  }
+
+
+  @include column-create();
+  @include grid-create();
+
+  &__btn {
+    display: flex;
+    justify-content: flex-start;
+
+    & > :not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+}
+
+

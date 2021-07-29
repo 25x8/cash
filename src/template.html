@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
-<div id="root"></div>
+<header>
+    <h1 class="hidden hidden--heading">Лимонады Неверкино</h1>
+    <nav>
+        <ul class="navigation container-def">
+            <li>Главная</li>
+            <li>Ассортимент</li>
+            <li>Сотрудничество</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="content content__top container-def">
+        <div class="container__col--6">
+            <h1>Сохраняя традиции</h1>
+            <p>
+                <b>Лимонад</b>, который изготавливают по старинным семейным
+                рецептам <strong>в поселке Неверкино с 1960 года</strong>.
+                Невероятный вкус из натуральных ингредиентов!
+            </p>
+            <div class="btn container__btn">
+                <button class="btn btn__img btn__img--right-arrow btn__first">Ассортимент</button>
+                <button class="btn btn__second">Сотрудничество</button>
+            </div>
+        </div>
+    </section>
+    <section class="content content__products container-def">
+        <div class="container__grid">
+            <div class="card card__product">
+                <picture>
+                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
+                </picture>
+            </div>
+            <div class="card card__product">
+                <picture>
+                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
+                </picture>
+            </div>
+            <div class="card card__product">
+                <picture>
+                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
+                </picture>
+            </div>
+            <div class="card card__product">
+                <picture>
+                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
+                </picture>
+            </div>
+        </div>
+        <div class="container-def mode__flex mode__center mode__pt--1">
+            <button class="btn__second btn__square">Показать еще</button>
+        </div>
+    </section>
+    <section class="content content__description container-def mode__pt--2"></section>
+    <section class="content content__certificates container-def"></section>
+    <section class="content content__contacts container-def"></section>
+</main>
+<footer>
+
+</footer>
+
 </body>
 </html>

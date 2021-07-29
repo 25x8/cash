@@ -1,0 +1,35 @@
+.card {
+
+    &__product {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85.5px 85.5px;
+        max-width: 260px;
+        height: 280px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 7rem;
+            bottom: -0.5rem;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background: {
+                image: url("../../src/assets/images/cards/ice.png");
+                repeat: no-repeat;
+                size: cover;
+            };
+            transition: all 500ms;
+
+        }
+
+        &:hover {
+            &:after {
+                transform: translateY(-0.25rem);
+            }
+        }
+
+    }
+}
