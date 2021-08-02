@@ -34,36 +34,49 @@
         </div>
     </section>
     <section class="content content__products container-def">
-        <div class="container__grid">
+        <div class="content__products--card">
             <div class="card card__product">
-                <picture>
-                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
-                </picture>
-            </div>
-            <div class="card card__product">
-                <picture>
-                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
-                </picture>
-            </div>
-            <div class="card card__product">
-                <picture>
-                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
-                </picture>
-            </div>
-            <div class="card card__product">
-                <picture>
-                    <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                    <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>" alt="лимонад">
-                </picture>
+                <div class="card__product--image">
+                    <picture>
+                        <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                        <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
+                             alt="лимонад">
+                    </picture>
+                </div>
+                <h2>
+                    <div class="card card__title">Буратино</div>
+                </h2>
+                <p>
+                    Состав: родниковая «подготовленная» вода, сахар-песок,
+                    регулятор кислотности-лимонная кислота, идентичный натуральному
+                    ароматизатор «Груша», колер, консервант-натрия бензоат.
+                </p>
             </div>
         </div>
-        <div class="container-def mode__flex mode__center mode__pt--1">
-            <button class="btn__second btn__square">Показать еще</button>
+        <div class="splide__content">
+            <div class="splide">
+                <div data-glide-el="track" class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            Буратино
+                        </li>
+                        <li class="splide__slide">
+                            Лимонад
+                        </li>
+                        <li class="splide__slide">
+                            Сода
+                        </li>
+                        <li class="splide__slide">
+                            Колокольчик
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <div class="container-def mode__flex mode__center mode__pt--1">
+        <button class="btn__second btn__square">Показать еще</button>
+    </div>
     <section class="content content__description container-def mode__pt--2">
         <div class="content--row mode__flex">
             <div class="container__col--6">
