@@ -1,6 +1,7 @@
 import  './scss/style.scss';
-import {initSplide} from "./js/modules/splidejs";
+import {initProductsSplide, initCertificatesSplide} from "./js/modules/splidejs";
 
 document.body.onload = () => {
-    initSplide('.glide');
+    initProductsSplide('.content__products .splide');
+    initCertificatesSplide('.content__certificates .splide')
 };

@@ -135,12 +135,28 @@
             </div>
         </div>
     </section>
-    <section class="content content__certificates container-def"></section>
-    <section class="content content__contacts container-def">
+    <section class="content content__certificates container-def mode__pt--6">
+        <h2 class="mode__text--center">
+            Награды и сертификаты
+        </h2>
+        <div class="splide">
+            <div data-glide-el="track" class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <picture>
+                            <source srcset="<%=require('./assets/images/certificates/default.png')%>">
+                            <img class="" src="<%=require('./assets/images/certificates/default.png')%>" alt="лимонад">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content content__contacts container-def mode__pt--5">
+        <h2 class="mode__text--center">
+            Обратная связь
+        </h2>
         <form class="form__group--reg-form form__group--second">
-            <h2>
-                Обратная связь
-            </h2>
             <span>Оставьте заявку, и в кротчайшие сроки с вами свяжется консультант и ответит на любые вопросы</span>
             <div class="form__group--input form__group--select-group">
                 <input type="text" class="form-control" id="form__three-inputName" placeholder="Ваше имя"

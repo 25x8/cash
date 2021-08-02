@@ -6,5 +6,9 @@
     justify-content: center;
 }
 
+.mode__text--center {
+    text-align: center;
+}
+
 
 @include create-padding-top();

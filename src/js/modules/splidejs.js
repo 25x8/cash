@@ -1,8 +1,6 @@
 import "@splidejs/splide/dist/css/splide.min.css";
 import Splide from "@splidejs/splide";
 
-const ACTIVE_BULLET_SELECTOR = 'glide__bullet--active';
-
 const lemonadeList = [
     {
         title: 'Классический'
@@ -19,8 +17,8 @@ const lemonadeList = [
 ]
 
 
-export function initSplide(selector) {
-    const splide = new Splide('.splide', {
+export function initProductsSplide(selector) {
+     new Splide(selector, {
         type: 'loop',
         perPage: 5,
         perMove: 1,
@@ -33,14 +31,16 @@ export function initSplide(selector) {
         updateOnMove: true
 
     }).mount();
+}
 
-    splide.on('move', function (s, i) {
-
-        // document.querySelector('.splide__slide.is-active').style.transform = 'translateX(0)!important';
-        // document.querySelector('.splide__slide.is-active').classList.add('in-translate')
-    })
-
-    splide.on('active', function ({slide}) {
-        // document.querySelector('.in-translate').classList.remove('in-translate')
-    })
+export function initCertificatesSplide(selector) {
+    new Splide(selector, {
+        type: 'loop',
+        perPage: 5,
+        perMove: 1,
+        focus: 'center',
+        height: '240px',
+        gap: '2rem',
+        clones: 3
+    }).mount();
 }
