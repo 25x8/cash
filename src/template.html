@@ -64,9 +64,93 @@
             <button class="btn__second btn__square">Показать еще</button>
         </div>
     </section>
-    <section class="content content__description container-def mode__pt--2"></section>
+    <section class="content content__description container-def mode__pt--2">
+        <div class="content--row mode__flex">
+            <div class="container__col--6">
+                <h2>Тот самый вкус детства</h2>
+                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
+                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
+                </p>
+            </div>
+            <div class="container__col--6">
+                <picture>
+                    <source srcset="<%=require('./assets/images/description/1.png')%>">
+                    <img class="" src="<%=require('./assets/images/description/1.png')%>" alt="лимонад">
+                </picture>
+            </div>
+        </div>
+        <div class="content--row mode__flex">
+            <div class="container__col--6">
+                <h2>Тот самый вкус детства</h2>
+                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
+                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
+                </p>
+            </div>
+            <div class="container__col--6">
+                <picture>
+                    <source srcset="<%=require('./assets/images/description/2.png')%>">
+                    <img class="" src="<%=require('./assets/images/description/2.png')%>" alt="лимонад">
+                </picture>
+            </div>
+        </div>
+        <div class="content--row mode__flex">
+            <div class="container__col--6">
+                <h2>Тот самый вкус детства</h2>
+                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
+                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
+                </p>
+            </div>
+            <div class="container__col--6">
+                <picture>
+                    <source srcset="<%=require('./assets/images/description/3.png')%>">
+                    <img class="" src="<%=require('./assets/images/description/3.png')%>" alt="лимонад">
+                </picture>
+            </div>
+        </div>
+        <div class="content--row mode__flex">
+            <div class="container__col--6">
+                <h2>Тот самый вкус детства</h2>
+                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
+                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
+                </p>
+            </div>
+            <div class="container__col--6">
+                <picture>
+                    <source srcset="<%=require('./assets/images/description/4.png')%>">
+                    <img class="" src="<%=require('./assets/images/description/4.png')%>" alt="лимонад">
+                </picture>
+            </div>
+        </div>
+    </section>
     <section class="content content__certificates container-def"></section>
-    <section class="content content__contacts container-def"></section>
+    <section class="content content__contacts container-def">
+        <form class="form__group--reg-form form__group--second">
+            <h2>
+                Обратная связь
+            </h2>
+            <span>Оставьте заявку, и в кротчайшие сроки с вами свяжется консультант и ответит на любые вопросы</span>
+            <div class="form__group--input form__group--select-group">
+                <input type="text" class="form-control" id="form__three-inputName" placeholder="Ваше имя"
+                       aria-label="name-input-three">
+                <input type="tel" class="form-control" id="form__three-phoneInput" placeholder="Телефон"
+                       aria-label="phone-input-three"
+                       pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
+
+            </div>
+            <div id="inputFeedback-3" class="invalid-feedback text-center">
+                Пожалуйста, заполните все поля
+            </div>
+            <div class="form-check">
+                <input class="form-check-input my-2" type="checkbox" value="" id="checkPersonalDataThree"
+                       aria-describedby="inputName3" checked required>
+            </div>
+
+            <button type="submit" class="button button--red button--disabled button__get-money py-2 px-4"
+                    id="submit-three">
+                Заказать звонок
+            </button>
+        </form>
+    </section>
 </main>
 <footer>
 
