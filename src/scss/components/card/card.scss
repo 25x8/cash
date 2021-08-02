@@ -2,34 +2,62 @@
 
     &__product {
         display: flex;
+        flex-direction: column;
         position: relative;
-        overflow: hidden;
-        border-radius: 0 0 85.5px 85.5px;
+
+
         max-width: 260px;
-        height: 280px;
+        //height: 280px;
+        //border: 1px solid white;
 
-        &:after {
-            content: '';
-            position: absolute;
-            top: 7rem;
-            bottom: -0.5rem;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            background: {
-                image: url("../../src/assets/images/cards/ice.png");
-                repeat: no-repeat;
-                size: cover;
-            };
-            transition: all 500ms;
+        &--image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 85.5px 85.5px;
 
-        }
-
-        &:hover {
             &:after {
-                transform: translateY(-0.25rem);
+                content: '';
+                position: absolute;
+                top: 7rem;
+                bottom: -0.5rem;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                background: {
+                    image: url("../../src/assets/images/cards/ice.png");
+                    repeat: no-repeat;
+                    size: cover;
+                };
+                transition: all 500ms;
+
             }
+
+            &:hover {
+                &:after {
+                    transform: translateY(-0.25rem);
+                }
+            }
+
         }
 
     }
+
+
+    h2 {
+        margin-top: 0.9rem;
+    }
+
+    p {
+        margin-top: 0;
+        padding: 0.9rem 2.5rem;
+        font-size: 0.6rem;
+        border: 1px solid #828282;
+        border-radius: 8px;
+    }
+
+    &__title {
+
+        text-align: center;
+    }
+
 }
