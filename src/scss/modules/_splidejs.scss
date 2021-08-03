@@ -20,33 +20,20 @@
         text-align: center;
         transition: all 400ms;
 
-
-        &:not(.is-active) {
-            opacity: 0.5;
-            font-size: 0.8rem;
-        }
     }
 
-    .is-active {
-        transform: translateX(-1.5rem);
-    }
 
     .splide__slide.is-active {
 
         position: relative;
-
-        &:after {
-            content: '';
-            position: absolute;
-            width: 500px;
-            left: -50%;
-            top: 50%;
-            border: 1px solid white;
-        }
     }
 }
 
 .content__certificates {
+
+    h2 {
+        margin-bottom: 1.8rem;
+    }
 
     .splide__pagination {
         bottom: -1.5rem;

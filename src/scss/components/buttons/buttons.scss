@@ -5,6 +5,7 @@ button {
   padding: $btn-padding-horizontal $btn-padding-vertical;
   cursor: pointer;
   border: 1px solid $colors--typography;
+
 }
 
 .btn {
@@ -14,20 +15,36 @@ button {
     padding: 0.5rem 1.8rem;
   }
 
+
   &__first {
     background-color: $colors__button--first;
   }
+
 
   &__second {
     background-color: transparent;
   }
 
+
   &__img {
+
     position: relative;
     padding-right: #{$btn-padding-horizontal + 2rem};
 
     &--right-arrow {
-        @include btn-image($btn-icon__path--right-arrow);
+      @include btn-image($btn-icon__path--right-arrow);
+
+      &:after {
+        right: 12%;
       }
     }
+
+
+    &--bascket {
+      min-height: 2.5rem;
+      @include btn-image($btn-icon__path--bascket);
+    }
+  }
+
+
 }

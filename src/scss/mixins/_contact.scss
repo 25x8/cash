@@ -1,0 +1,14 @@
+@mixin setIcon($url) {
+    &:before {
+        content: '';
+        background: {
+            image: url($url);
+            repeat: no-repeat;
+        };
+        position: absolute;
+        height:  1.5rem;
+        width: 1.5rem;
+        left: -1.5rem;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.contact {
+
+    &__fields {
+        width: 100%;
+
+        &:not(&:last-child) {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &.contact__info {
+        margin-left: auto;
+        padding-top: 1.5rem;
+        & > div{
+            margin-bottom: 1.9rem;
+        }
+    }
+
+    &__info {
+        position: relative;
+
+        &--phone {
+            a {
+                @include setIcon("../../src/assets/icons/contacts/file.svg");
+            }
+        }
+
+        &--site {
+
+            a {
+                @include setIcon("../../src/assets/icons/contacts/site.svg");
+            }
+        }
+
+        &--email {
+
+            a {
+                @include setIcon("../../src/assets/icons/contacts/mail.svg");
+            }
+        }
+
+        &--hours {
+
+            span {
+                @include setIcon("../../src/assets/icons/contacts/clock.svg");
+            }
+        }
+    }
+}

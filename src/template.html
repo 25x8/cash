@@ -8,13 +8,22 @@
 </head>
 
 <body>
-<header>
+<header class="mode__pt--2">
     <h1 class="hidden hidden--heading">Лимонады Неверкино</h1>
-    <nav>
-        <ul class="navigation container-def">
-            <li>Главная</li>
-            <li>Ассортимент</li>
-            <li>Сотрудничество</li>
+    <nav class="container-def">
+        <ul class="navigation">
+            <li class="active">Главная</li>
+            <li>Лавка</li>
+            <li>О заводе</li>
+            <li>Награды</li>
+            <li>Обратная связь</li>
+            <li>
+                <picture>
+                    <source srcset="<%=require('./assets/icons/header/cart.svg')%>">
+                    <img class="" src="<%=require('./assets/icons/header/cart.svg')%>"
+                         alt="Корзина">
+                </picture>
+            </li>
         </ul>
     </nav>
 </header>
@@ -33,41 +42,27 @@
             </div>
         </div>
     </section>
-    <section class="content content__products container-def">
-        <div class="content__products--card">
-            <div class="card card__product">
-                <div class="card__product--image">
-                    <picture>
-                        <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                        <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
-                             alt="лимонад">
-                    </picture>
-                </div>
-                <h2>
-                    <div class="card card__title">Буратино</div>
-                </h2>
-                <p>
-                    Состав: родниковая «подготовленная» вода, сахар-песок,
-                    регулятор кислотности-лимонная кислота, идентичный натуральному
-                    ароматизатор «Груша», колер, консервант-натрия бензоат.
-                </p>
-            </div>
-        </div>
+    <section class="content content__products container-def mode__pt--5">
         <div class="splide__content">
             <div class="splide">
                 <div data-glide-el="track" class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            Буратино
-                        </li>
-                        <li class="splide__slide">
-                            Лимонад
-                        </li>
-                        <li class="splide__slide">
-                            Сода
-                        </li>
-                        <li class="splide__slide">
-                            Колокольчик
+                            <div class="card card__product">
+                                <div class="card__product--image">
+                                    <picture>
+                                        <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                                        <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
+                                             alt="лимонад">
+                                    </picture>
+                                </div>
+                                <h2>
+                                    <div class="card card__title">Буратино</div>
+                                </h2>
+                                <button class="btn btn__img btn__img--bascket btn__square btn__second">
+                                    <div>В корзину</div>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -156,33 +151,48 @@
         <h2 class="mode__text--center">
             Обратная связь
         </h2>
-        <form class="form__group--reg-form form__group--second">
-            <span>Оставьте заявку, и в кротчайшие сроки с вами свяжется консультант и ответит на любые вопросы</span>
-            <div class="form__group--input form__group--select-group">
-                <input type="text" class="form-control" id="form__three-inputName" placeholder="Ваше имя"
-                       aria-label="name-input-three">
-                <input type="tel" class="form-control" id="form__three-phoneInput" placeholder="Телефон"
-                       aria-label="phone-input-three"
-                       pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
-
+        <div class="mode__flex mode__pt--2">
+            <form class="content__contacts--form container__col--5">
+                <div class="contact contact__fields mode__flex mode__flex--column">
+                    <div id="invalid-message" class="invalid-message">
+                        Пожалуйста, заполните все поля
+                    </div>
+                    <input type="text" class="contact__fields contact__fields--name" id="field--name"
+                           placeholder="Ваше имя"  aria-label="name-input" required>
+                    <input type="tel" class="contact__fields contact__fields--phone" id="field--phone"
+                           placeholder="Телефон" aria-label="phone-input"
+                           pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
+                    <label for="field--message"></label>
+                    <textarea class="contact__fields contact__fields--message" name="message-input" id="field--message"
+                              cols="30" rows="5"
+                              placeholder="Напишите нам" required></textarea>
+                </div>
+                <button type="submit" class="btn btn__first btn__square" id="submit">
+                    Отправить
+                </button>
+            </form>
+            <div class="contact contact__info container__col--5 mode__flex mode__flex--column">
+                <div class="contact__info contact__info--phone">
+                    <a href="tel:+78000000000" >+7 (800) 000-00-00</a>
+                </div>
+                <div class="contact__info contact__info--site">
+                    <a href="#" rel="nofollow">neverkino-lemonade.ru</a>
+                </div>
+                <div class="contact__info contact__info--email">
+                    <a href="mailto:test@test.ru">test@test.ru</a>
+                </div>
+                <div class="contact__info contact__info--hours">
+                    <span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 14:00</span>
+                </div>
             </div>
-            <div id="inputFeedback-3" class="invalid-feedback text-center">
-                Пожалуйста, заполните все поля
-            </div>
-            <div class="form-check">
-                <input class="form-check-input my-2" type="checkbox" value="" id="checkPersonalDataThree"
-                       aria-describedby="inputName3" checked required>
-            </div>
-
-            <button type="submit" class="button button--red button--disabled button__get-money py-2 px-4"
-                    id="submit-three">
-                Заказать звонок
-            </button>
-        </form>
+        </div>
     </section>
 </main>
 <footer>
-
+    <div class="container-def mode__flex">
+        <span class="mode__text--left">Neverkino-lemonade</span>
+        <span class="mode__text--right">Design by <strong>High Blow Media Group</strong></span>
+    </div>
 </footer>
 
 </body>

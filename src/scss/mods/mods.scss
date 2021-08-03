@@ -1,14 +1,27 @@
 .mode__flex {
     display: flex;
+
+    &--column {
+        flex-direction: column;
+    }
 }
 
 .mode__center {
     justify-content: center;
 }
 
+.mode__text--left {
+    text-align: left;
+}
+
 .mode__text--center {
     text-align: center;
 }
+
+.mode__text--right {
+    text-align: right;
+}
+
 
 
 @include create-padding-top();

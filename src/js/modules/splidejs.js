@@ -18,13 +18,11 @@ const lemonadeList = [
 
 
 export function initProductsSplide(selector) {
-     new Splide(selector, {
+    new Splide(selector, {
         type: 'loop',
-        perPage: 5,
+        perPage: 4,
         perMove: 1,
-        direction: 'ttb',
-        heightRatio: 0.6,
-        focus: 'center',
+        // focus: 'center',
         easing: 'linear',
         pagination: false,
         clones: 3,
@@ -41,6 +39,7 @@ export function initCertificatesSplide(selector) {
         focus: 'center',
         height: '240px',
         gap: '2rem',
+        arrows: false,
         clones: 3
     }).mount();
 }

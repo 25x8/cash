@@ -17,8 +17,20 @@ body {
   background-color: $colors--background;
 }
 
+a {
+  color: $colors--typography;
+  text-decoration: none;
+}
+
 picture {
   img {
     height: 100%;
   }
 }
+
+input, textarea {
+  padding: 0.7rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+

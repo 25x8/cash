@@ -4,11 +4,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
-
         max-width: 260px;
-        //height: 280px;
-        //border: 1px solid white;
+        align-items: center;
 
         &--image {
             position: relative;
@@ -38,6 +35,37 @@
                 }
             }
 
+        }
+
+
+        button {
+
+            div {
+                transition: all 200ms;
+                overflow: hidden;
+                width: 0;
+                max-height: 1.25rem;
+                color: transparent;
+            }
+
+            &:after {
+
+            }
+        }
+
+        &:hover {
+
+            button {
+
+                div {
+                    width: 5rem;
+                    color: $colors--typography;
+                }
+
+                &:after {
+                    right: 12%;
+                }
+            }
         }
 
     }

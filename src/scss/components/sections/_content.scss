@@ -15,13 +15,10 @@
 
     &__products {
 
-        padding-top: 4rem;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         align-items: center;
 
     }
+
 
     &__description {
 
@@ -69,6 +66,7 @@
 
     }
 
+
     &__certificates {
 
         img {
@@ -77,6 +75,23 @@
             object-fit: contain;
         }
 
+    }
+
+
+    &__contacts {
+
+        padding-bottom: 2.5rem;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            max-width: 200px;
+            margin-top: 1rem;
+        }
     }
 
 }
