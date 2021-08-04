@@ -21,6 +21,16 @@
 
         align-items: center;
 
+        &--description {
+            padding: 1rem;
+            margin-top: 1.8rem;
+            border: 1px solid $colors__border--grey;
+            font-size: 0.6rem;
+            border-radius: 8px;
+            background-color: #202020;
+            max-width: 50%;
+        }
+
     }
 
 

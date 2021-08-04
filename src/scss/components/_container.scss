@@ -35,7 +35,7 @@
             content: '';
             left: calc(50% + 5.8rem);
             right: 0;
-            border: 1px solid $colors--border--grey;
+            border: 1px solid $colors__border--grey;
             top: calc(100% - 1rem);
             z-index: -1;
         }
@@ -45,7 +45,7 @@
             content: '';
             left: 0;
             right: calc(50% + 5.8rem);
-            border: 1px solid $colors--border--grey;
+            border: 1px solid $colors__border--grey;
             top: calc(100% - 1rem);
             z-index: -1;
         }
