@@ -1,30 +1,55 @@
 .container {
 
-  &-def {
-    padding-left: $container-gutter;
-    padding-right: $container-gutter;
-    margin-left: auto;
-    margin-right: auto;
+    &-def {
+        padding-left: $container-gutter;
+        padding-right: $container-gutter;
+        margin-left: auto;
+        margin-right: auto;
 
-    @each $size, $breakpoint in $breakpoints {
-      @include breakpoint-down($size) {
-        max-width: map-get($container-max-widths, $size);
-      }
+        @each $size, $breakpoint in $breakpoints {
+            @include breakpoint-down($size) {
+                max-width: map-get($container-max-widths, $size);
+            }
+        }
     }
-  }
 
 
-  @include column-create();
-  @include grid-create();
+    @include column-create();
+    @include grid-create();
 
-  &__btn {
-    display: flex;
-    justify-content: flex-start;
+    &__btn {
+        display: flex;
+        justify-content: flex-start;
 
-    & > :not(:last-child) {
-      margin-right: 2rem;
+        & > :not(:last-child) {
+            margin-right: 2rem;
+        }
     }
-  }
+
+    &__catalog-btn {
+
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: calc(50% + 5.8rem);
+            right: 0;
+            border: 1px solid $colors--border--grey;
+            top: calc(100% - 1rem);
+            z-index: -1;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: calc(50% + 5.8rem);
+            border: 1px solid $colors--border--grey;
+            top: calc(100% - 1rem);
+            z-index: -1;
+        }
+    }
 
 }
 

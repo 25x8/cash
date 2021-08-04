@@ -40,30 +40,39 @@
 
         button {
 
-            div {
-                transition: all 200ms;
+            padding-left: 1.35rem;
+            //padding-right: 1.35rem;
+
+            .btn--text {
+                transition: width 200ms;
                 overflow: hidden;
                 width: 0;
+                opacity: 0;
                 max-height: 1.25rem;
-                color: transparent;
+                color: $colors--typography;
+
             }
 
             &:after {
-
+                transition: all 200ms;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
+
         }
 
         &:hover {
 
             button {
 
-                div {
+                .btn--text {
                     width: 5rem;
-                    color: $colors--typography;
+                    opacity: 1;
                 }
 
                 &:after {
-                    right: 12%;
+                    transform: translate(-150%, -50%);
+                    left: 100%;
                 }
             }
         }
@@ -84,8 +93,8 @@
     }
 
     &__title {
-
         text-align: center;
     }
 
 }
+

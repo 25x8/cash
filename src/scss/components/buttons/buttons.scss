@@ -4,7 +4,7 @@ button {
   font-size: 1rem;
   padding: $btn-padding-horizontal $btn-padding-vertical;
   cursor: pointer;
-  border: 1px solid $colors--typography;
+  border: 1px solid $colors__border--grey;
 
 }
 
@@ -44,7 +44,19 @@ button {
       min-height: 2.5rem;
       @include btn-image($btn-icon__path--bascket);
     }
+
+
+    &--cart {
+      @include btn-image($btn-icon__path--cart);
+
+      &:after {
+        right: 12%;
+      }
+    }
+
   }
 
 
+
 }
+
