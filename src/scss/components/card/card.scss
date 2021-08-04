@@ -1,3 +1,7 @@
+@mixin onHover() {
+
+}
+
 .card {
 
     &__product {
@@ -6,6 +10,7 @@
         position: relative;
         max-width: 260px;
         align-items: center;
+        padding-bottom: 6rem;
 
         &--image {
             position: relative;
@@ -30,6 +35,7 @@
             }
 
             &:hover {
+
                 &:after {
                     transform: translateY(-0.25rem);
                 }
@@ -61,7 +67,26 @@
 
         }
 
+
+        &--description {
+            padding: 1rem;
+            margin-top: 1.8rem;
+            border: 1px solid $colors__border--grey;
+            font-size: 0.6rem;
+            border-radius: 8px;
+            background-color: #202020;
+            max-width: 50%;
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+
+
         &:hover {
+
+            .card__product--description {
+                display: block;
+            }
 
             button {
 
@@ -74,7 +99,23 @@
                     transform: translate(-150%, -50%);
                     left: 100%;
                 }
+
+                &:before {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid $colors--grey;
+                    border-radius: 50%;
+                    background-color: $colors--grey;
+                    position: absolute;
+                    bottom: -2.2rem;
+                }
             }
+
+
+
+
+
         }
 
     }
