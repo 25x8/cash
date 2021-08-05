@@ -7,10 +7,12 @@
     &__product {
         display: flex;
         flex-direction: column;
-        position: relative;
         max-width: 260px;
         align-items: center;
         padding-bottom: 7rem;
+        border: 1px solid $colors__border--light;
+        border-radius: 20px;
+
 
         &--image {
             position: relative;
@@ -20,7 +22,7 @@
             &:after {
                 content: '';
                 position: absolute;
-                top: 7rem;
+                top: 6rem;
                 bottom: -0.5rem;
                 left: 0;
                 right: 0;
@@ -40,7 +42,6 @@
                     transform: translateY(-0.25rem);
                 }
             }
-
         }
 
 
@@ -78,7 +79,7 @@
             max-width: 50%;
             display: none;
             position: absolute;
-            bottom: -0.8rem;
+            bottom: 0;
             min-width: 400px;
         }
 
@@ -101,25 +102,8 @@
                     left: 100%;
                 }
 
-                &:before {
-                    content: '';
-                    width: 12px;
-                    height: 12px;
-                    border: 1px solid $colors--grey;
-                    border-radius: 50%;
-                    background-color: $colors--grey;
-                    position: absolute;
-                    bottom: -2.2rem;
-                    z-index: 12;
-                }
             }
-
-
-
-
-
         }
-
     }
 
 
