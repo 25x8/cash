@@ -1,4 +1,4 @@
-export function bindShowAnimationOnHover(el) {
+export function bindShowAnimationOnHover() {
 
     const productCards = document.querySelectorAll('.content__products .splide__slide');
     productCards.forEach(el => {
@@ -13,5 +13,8 @@ export function bindShowAnimationOnHover(el) {
         })
     })
 
+}
+
+export function bindShowDescriptionOnHover() {
 
 }

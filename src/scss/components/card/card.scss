@@ -10,7 +10,7 @@
         position: relative;
         max-width: 260px;
         align-items: center;
-        padding-bottom: 6rem;
+        padding-bottom: 7rem;
 
         &--image {
             position: relative;
@@ -50,12 +50,12 @@
             //padding-right: 1.35rem;
 
             .btn--text {
+
                 transition: width 200ms;
                 overflow: hidden;
                 width: 0;
                 opacity: 0;
                 max-height: 1.25rem;
-                color: $colors--typography;
 
             }
 
@@ -74,11 +74,12 @@
             border: 1px solid $colors__border--grey;
             font-size: 0.6rem;
             border-radius: 8px;
-            background-color: #202020;
+            background-color: $colors__hover-container;
             max-width: 50%;
             display: none;
             position: absolute;
-            bottom: 0;
+            bottom: -0.8rem;
+            min-width: 400px;
         }
 
 
@@ -109,6 +110,7 @@
                     background-color: $colors--grey;
                     position: absolute;
                     bottom: -2.2rem;
+                    z-index: 12;
                 }
             }
 

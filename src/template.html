@@ -59,11 +59,12 @@
                                 <h2>
                                     <div class="card card__title">Буратино</div>
                                 </h2>
-                                <button class="btn btn__img btn__img--bascket btn__square btn__second">
+                                <button class="btn btn__img btn__img--bascket btn__square btn__first">
                                     <div class="btn--text">В корзину</div>
                                 </button>
                                 <div class="card__product--description mode__my--1">
-                                    Состав: родниковая «подготовленная» вода, сахар-песок, регулятор кислотности-лимонная кислота,
+                                    Состав: родниковая «подготовленная» вода, сахар-песок, регулятор
+                                    кислотности-лимонная кислота,
                                     идентичный натуральному ароматизатор «Груша», колер, консервант-натрия бензонат.
                                 </div>
                             </div>
@@ -151,42 +152,45 @@
             </div>
         </div>
     </section>
-    <section class="content content__contacts container-def mode__pt--5">
-        <h2 class="mode__text--center">
-            Обратная связь
-        </h2>
-        <div class="mode__flex mode__pt--2">
-            <form class="content__contacts--form container__col--5">
-                <div class="contact contact__fields mode__flex mode__flex--column">
-                    <div id="invalid-message" class="invalid-message">
-                        Пожалуйста, заполните все поля
+    <section class="content content__contacts mode__pt--5">
+        <div class="container-def">
+            <h2 class="mode__text--center">
+                Обратная связь
+            </h2>
+            <div class="mode__flex mode__pt--2">
+                <form class="content__contacts--form container__col--5">
+                    <div class="contact contact__fields mode__flex mode__flex--column">
+                        <div id="invalid-message" class="invalid-message">
+                            Пожалуйста, заполните все поля
+                        </div>
+                        <input type="text" class="contact__fields contact__fields--name" id="field--name"
+                               placeholder="Ваше имя" aria-label="name-input" required>
+                        <input type="tel" class="contact__fields contact__fields--phone" id="field--phone"
+                               placeholder="Телефон" aria-label="phone-input"
+                               pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
+                        <label for="field--message"></label>
+                        <textarea class="contact__fields contact__fields--message" name="message-input"
+                                  id="field--message"
+                                  cols="30" rows="5"
+                                  placeholder="Напишите нам" required></textarea>
                     </div>
-                    <input type="text" class="contact__fields contact__fields--name" id="field--name"
-                           placeholder="Ваше имя"  aria-label="name-input" required>
-                    <input type="tel" class="contact__fields contact__fields--phone" id="field--phone"
-                           placeholder="Телефон" aria-label="phone-input"
-                           pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
-                    <label for="field--message"></label>
-                    <textarea class="contact__fields contact__fields--message" name="message-input" id="field--message"
-                              cols="30" rows="5"
-                              placeholder="Напишите нам" required></textarea>
-                </div>
-                <button type="submit" class="btn btn__first btn__square" id="submit">
-                    Отправить
-                </button>
-            </form>
-            <div class="contact contact__info container__col--5 mode__flex mode__flex--column">
-                <div class="contact__info contact__info--phone">
-                    <a href="tel:+78000000000" >+7 (800) 000-00-00</a>
-                </div>
-                <div class="contact__info contact__info--site">
-                    <a href="#" rel="nofollow">neverkino-lemonade.ru</a>
-                </div>
-                <div class="contact__info contact__info--email">
-                    <a href="mailto:test@test.ru">test@test.ru</a>
-                </div>
-                <div class="contact__info contact__info--hours">
-                    <span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 14:00</span>
+                    <button type="submit" class="btn btn__first btn__square" id="submit">
+                        Отправить
+                    </button>
+                </form>
+                <div class="contact contact__info container__col--5 mode__flex mode__flex--column">
+                    <div class="contact__info contact__info--phone">
+                        <a href="tel:+78000000000">+7 (800) 000-00-00</a>
+                    </div>
+                    <div class="contact__info contact__info--site">
+                        <a href="#" rel="nofollow">neverkino-lemonade.ru</a>
+                    </div>
+                    <div class="contact__info contact__info--email">
+                        <a href="mailto:test@test.ru">test@test.ru</a>
+                    </div>
+                    <div class="contact__info contact__info--hours">
+                        <span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 14:00</span>
+                    </div>
                 </div>
             </div>
         </div>
