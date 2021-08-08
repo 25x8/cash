@@ -18,13 +18,18 @@
 
 
     &__products {
-
         align-items: center;
-
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 32px;
+        padding: 1.5rem;
+        color: $colors--typography;
+        background: $colors--background;
     }
 
 
     &__description {
+
+        color: $colors--typography;
 
         h2 {
             margin-top: 0;

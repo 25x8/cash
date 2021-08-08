@@ -8,6 +8,11 @@
 </head>
 
 <body>
+<picture id="bacgkround-img">
+    <source srcset="<%=require('./assets/images/background.png')%>">
+    <img class="" src="<%=require('./assets/images/background.png')%>"
+         alt="background">
+</picture>
 <header class="mode__pt--2">
     <h1 class="hidden hidden--heading">Лимонады Неверкино</h1>
     <nav class="container-def">
@@ -28,7 +33,7 @@
     </nav>
 </header>
 <main>
-    <section class="content content__top container-def">
+    <section class="content content__top container-def mode__pb--8">
         <div class="container__col--6">
             <h1>Сохраняя традиции</h1>
             <p>
@@ -49,19 +54,24 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="card card__product">
-                                <div class="card__product--image">
-                                    <picture>
-                                        <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                                        <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
-                                             alt="лимонад">
-                                    </picture>
+                                <div class="card card--border">
+                                    <div class="card card__product--price">
+                                        <span>60 р.</span>
+                                    </div>
+                                    <div class="card__product--image">
+                                        <picture>
+                                            <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
+                                            <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
+                                                 alt="лимонад">
+                                        </picture>
+                                    </div>
+                                    <h2>
+                                        <div class="card card__title">Буратино</div>
+                                    </h2>
+                                    <button class="btn btn__img btn__img--bascket btn__square btn__first">
+                                        <div class="btn--text">В корзину</div>
+                                    </button>
                                 </div>
-                                <h2>
-                                    <div class="card card__title">Буратино</div>
-                                </h2>
-                                <button class="btn btn__img btn__img--bascket btn__square btn__first">
-                                    <div class="btn--text">В корзину</div>
-                                </button>
                                 <div class="card__product--description mode__my--1">
                                     Состав: родниковая «подготовленная» вода, сахар-песок, регулятор
                                     кислотности-лимонная кислота,
@@ -73,11 +83,14 @@
                 </div>
             </div>
         </div>
+        <div class="container-def container__catalog-btn mode__flex mode__center mode__mb--1">
+            <button class="btn__first btn__img btn__img--cart btn btn__square">
+                Перейти в каталог
+            </button>
+        </div>
     </section>
-    <div class="container-def container__catalog-btn mode__flex mode__center mode__my--3">
-        <button class="btn__first btn__img btn__img--cart btn btn__square">Каталог</button>
-    </div>
-    <section class="content content__description container-def mode__pt--1">
+
+    <section class="content content__description container-def mode__pt--3">
         <div class="content--row mode__flex">
             <div class="container__col--6">
                 <h2>Тот самый вкус детства</h2>

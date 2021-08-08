@@ -20,7 +20,7 @@ export function bindShowAnimationOnHover() {
 export function bindShowDescriptionOnHover() {
 
     const container = document.querySelector('.content__products .splide__content');
-    const cards = document.querySelectorAll('.content__products li');
+    const cards = document.querySelectorAll('.content__products li .card__product');
 
     cards.forEach(card => {
 

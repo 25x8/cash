@@ -1,12 +1,21 @@
+%arrow-default {
+    top: 40%;
+    border: 2px solid $colors__border--light;
+    background-color: $colors--background;
+    fill: $colors__border--light;
+}
+
 .content__products {
+
     .splide__arrow--prev {
-        top: -3rem !important;
+        left: -1em;
+        @extend %arrow-default;
 
     }
 
     .splide__arrow--next {
-        bottom: -3rem !important;
-
+        right: -1em;
+        @extend %arrow-default;
     }
 
     li.splide__slide {
@@ -17,10 +26,8 @@
     }
 
     .splide__slide {
-
         text-align: center;
         transition: all 400ms;
-
     }
 
 
