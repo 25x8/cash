@@ -35,10 +35,6 @@ export function bindShowDescriptionOnHover() {
                 description.style.right = '0';
             }
 
-            console.log('description', description.getBoundingClientRect())
-            console.log('container', container.getBoundingClientRect())
-
-
         });
 
         card.addEventListener('mouseleave', () => {

@@ -6,6 +6,7 @@
 
     &--border {
         border: 1px solid $colors__border--light;
+        background-color: $colors--background;
         border-radius: 20px;
         width: 100%;
         padding: 1rem;
@@ -22,10 +23,10 @@
             background-color: #EE1E1E;
             width: 5.5rem;
             height: 3rem;
-            border-radius: 0 11px 0 16px;
+            border-radius: 0 16px;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 0.5rem;
+            right: 0.5rem;
             font-weight: bold;
             color: $colors--background;
             display: flex;
@@ -105,9 +106,8 @@
 
         &--description {
             padding: 1rem;
-            border: 1px solid $colors__border--grey;
             border-radius: 8px;
-            background-color: $colors__hover-container;
+            background-color: $colors--green;
             max-width: 50%;
             display: none;
             position: absolute;
