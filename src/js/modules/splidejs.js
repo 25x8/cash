@@ -18,17 +18,41 @@ const lemonadeList = [
 
 
 export function initProductsSplide(selector) {
-    new Splide(selector, {
+    const splide = new Splide(selector, {
         type: 'loop',
         perPage: 4,
         perMove: 1,
-        // focus: 'center',
         easing: 'linear',
         pagination: false,
-        clones: 3,
-        updateOnMove: true
+        updateOnMove: true,
+        focus: 1,
+        trimSpace: false,
+        gap: '1rem',
+        breakpoints: {
+            1440: {
+                perPage: 3
+            },
+            1024: {
+                perPage: 2
+            },
+            768: {
+                perPage: 1,
+                padding: '2rem'
+            },
+        }
 
-    }).mount();
+    });
+
+    splide.on('mounted', function () {
+        setTimeout(() => splide.go( '+' ), 300)
+
+    });
+
+    splide.on( 'move', function() {
+        console.log(1111)
+    } );
+
+    splide.mount();
 }
 
 export function initCertificatesSplide(selector) {

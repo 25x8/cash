@@ -1,9 +1,13 @@
-@mixin create-padding-top() {
+@mixin create-y-paddings() {
     $padding: 0.5rem;
-    @for $i from 1 through 6 {
+    @for $i from 1 through 8 {
       $padding: $padding + 1;
         .mode__pt--#{$i} {
             padding-top: $padding;
+        }
+
+        .mode__pb--#{$i} {
+            padding-bottom: $padding;
         }
     }
 }
@@ -16,6 +20,11 @@
             margin-top: $margin;
             margin-bottom: $margin;
         }
-    }
 
+        .mode__mb--#{$i} {
+            margin-bottom: $margin;
+        }
+
+    }
 }
+

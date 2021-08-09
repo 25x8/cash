@@ -4,15 +4,49 @@
 
 .card {
 
+    &--border {
+        border: 1px solid $colors__border--light;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1rem;
+    }
+
     &__product {
         display: flex;
         flex-direction: column;
-        max-width: 260px;
         align-items: center;
         padding-bottom: 7rem;
-        border: 1px solid $colors__border--light;
-        border-radius: 20px;
+        width: 100%;
 
+        &--price {
+            background-color: #EE1E1E;
+            width: 5.5rem;
+            height: 3rem;
+            border-radius: 0 11px 0 16px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: bold;
+            color: $colors--background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: $colors--background;
+                top: 0.2rem;
+                right: 0.2rem;
+                border-radius: 50%;
+            }
+
+            span {
+                margin-right: 1rem;
+            }
+        }
 
         &--image {
             position: relative;
@@ -71,16 +105,18 @@
 
         &--description {
             padding: 1rem;
-            margin-top: 1.8rem;
             border: 1px solid $colors__border--grey;
-            font-size: 0.6rem;
             border-radius: 8px;
             background-color: $colors__hover-container;
             max-width: 50%;
             display: none;
             position: absolute;
-            bottom: 0;
+            bottom: 0.5rem;
             min-width: 400px;
+            font-size: 0.6rem;
+            text-align: left;
+            font-weight: bold;
+            color: #fff;
         }
 
 
