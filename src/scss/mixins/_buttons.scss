@@ -10,3 +10,12 @@
     transform: translateY(-50%);
   }
 }
+
+@mixin btn-on-hover($background, $color: $colors--background) {
+
+  &:hover {
+    color: $color;
+    background-color: $background;
+  }
+
+}
