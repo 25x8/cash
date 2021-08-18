@@ -19,64 +19,10 @@
         padding-bottom: 7rem;
         width: 100%;
 
-        &--price {
-            background-color: #EE1E1E;
-            width: 5.5rem;
-            height: 3rem;
-            border-radius: 0 16px;
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            font-weight: bold;
-            color: $colors--background;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &:after {
-                content: '';
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                background-color: $colors--background;
-                top: 0.2rem;
-                right: 0.2rem;
-                border-radius: 50%;
-            }
-
-            span {
-                margin-right: 1rem;
-            }
-        }
-
         &--image {
             position: relative;
             overflow: hidden;
             border-radius: 0 0 85.5px 85.5px;
-
-            &:after {
-                content: '';
-                position: absolute;
-                top: 6rem;
-                bottom: -0.5rem;
-                left: 0;
-                right: 0;
-                z-index: 1;
-                background: {
-                    image: url("../../src/assets/images/cards/ice.png");
-                    repeat: no-repeat;
-                    size: cover;
-                };
-                transition: all 500ms;
-
-            }
-
-            &:hover {
-
-                &:after {
-                    transform: translateY(-0.25rem);
-                }
-            }
         }
 
 
@@ -107,11 +53,11 @@
         &--description {
             padding: 1rem;
             border-radius: 8px;
-            background-color: $colors--green;
+            background-color: $colors__border--light;
             max-width: 50%;
             display: none;
             position: absolute;
-            bottom: 0.5rem;
+            bottom: 0;
             min-width: 400px;
             font-size: 0.6rem;
             text-align: left;

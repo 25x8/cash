@@ -12,17 +12,31 @@
     justify-content: center;
 }
 
-.mode__text--left {
-    text-align: left;
+
+.mode__text {
+
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+
+    &--white {
+        color: $colors--background;
+    }
+
+    &--black {
+        color: $colors--typography;
+    }
+
 }
 
-.mode__text--center {
-    text-align: center;
-}
-
-.mode__text--right {
-    text-align: right;
-}
 
 
 

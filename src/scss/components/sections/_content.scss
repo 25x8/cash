@@ -11,19 +11,16 @@
             margin-bottom: 1rem;
         }
 
-        button.btn__second {
-            border-color: $colors__typography;
-        }
     }
 
 
     &__products {
         align-items: center;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        border: 1px solid $colors__border--light;
         border-radius: 32px;
         padding: 1.5rem;
         color: $colors--typography;
-        border-color: $colors--background;
+        background-color: $colors--background;
     }
 
 
@@ -78,6 +75,12 @@
 
 
     &__certificates {
+
+        background-color: $colors__border--light;
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
 
         img {
             width: 100%;

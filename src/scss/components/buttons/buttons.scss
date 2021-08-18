@@ -4,7 +4,7 @@ button {
   font-size: 1rem;
   padding: $btn-padding-horizontal $btn-padding-vertical;
   cursor: pointer;
-  border: 1px solid $colors__border--grey;
+  border: 1px solid;
 
 }
 
@@ -19,11 +19,18 @@ button {
   &__first {
     color: $colors--background;
     background-color: $colors--first;
+
+    @include btn-on-hover($colors--background, $colors--typography);
+
   }
 
 
   &__second {
     background-color: transparent;
+    border-color: $colors--background;
+    color: $colors--background;
+
+    @include btn-on-hover($colors--green_salad);
   }
 
 
@@ -38,26 +45,43 @@ button {
       &:after {
         right: 12%;
       }
+
+      &:hover {
+        @include btn-image($btn-icon__path--right-arrow_black);
+      }
+
+
     }
 
 
     &--bascket {
       min-height: 2.5rem;
       @include btn-image($btn-icon__path--bascket);
+
+      @include btn-on-hover($colors--red);
+
     }
 
 
     &--cart {
-      @include btn-image($btn-icon__path--cart);
+      color: $colors--typography;
+      background-color: transparent;
+      border-color: $colors__border--grey;
+      @include btn-image($btn-icon__path--cart_black);
 
       &:after {
-        right: 12%;
+        right: 10%;
+      }
+
+      @include btn-on-hover($colors--green_salad, $colors--background);
+
+      &:hover{
+        border-color: $colors--green_salad;
+        @include btn-image($btn-icon__path--cart);
       }
     }
 
   }
-
-
 
 }
 

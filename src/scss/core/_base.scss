@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-
+  font-family: 'Open Sans', serif;
   &:focus {
     outline: none;
   }
@@ -20,6 +20,10 @@ body {
 a {
   color: $colors--typography;
   text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 picture {

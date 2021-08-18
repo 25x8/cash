@@ -55,9 +55,6 @@
                         <li class="splide__slide">
                             <div class="card card__product">
                                 <div class="card card--border">
-                                    <div class="card card__product--price">
-                                        <span>60 р.</span>
-                                    </div>
                                     <div class="card__product--image">
                                         <picture>
                                             <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
@@ -84,13 +81,16 @@
             </div>
         </div>
         <div class="container-def container__catalog-btn mode__flex mode__center mode__mb--1">
-            <button class="btn__first btn__img btn__img--cart btn btn__square">
+            <button class="btn__img btn__img--cart btn btn__square">
                 Перейти в каталог
             </button>
         </div>
     </section>
 
-    <section class="content content__description container-def mode__pt--3">
+    <section class="content content__description container-def mode__pt--2  mode__pb--4">
+        <h2 class="mode__text--center mode__mb--4">
+            О нас
+        </h2>
         <div class="content--row mode__flex">
             <div class="container__col--6">
                 <h2>Тот самый вкус детства</h2>
@@ -148,20 +148,23 @@
             </div>
         </div>
     </section>
-    <section class="content content__certificates container-def mode__pt--6">
-        <h2 class="mode__text--center">
-            Награды и сертификаты
-        </h2>
-        <div class="splide">
-            <div data-glide-el="track" class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <picture>
-                            <source srcset="<%=require('./assets/images/certificates/default.png')%>">
-                            <img class="" src="<%=require('./assets/images/certificates/default.png')%>" alt="лимонад">
-                        </picture>
-                    </li>
-                </ul>
+    <section class="content content__certificates mode__pt--2 mode__pb--4">
+        <div class="container-def">
+            <h2 class="mode__text--center mode__text--black">
+                Награды и сертификаты
+            </h2>
+            <div class="splide">
+                <div data-glide-el="track" class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <picture>
+                                <source srcset="<%=require('./assets/images/certificates/default.png')%>">
+                                <img class="" src="<%=require('./assets/images/certificates/default.png')%>"
+                                     alt="лимонад">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
