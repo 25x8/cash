@@ -10,6 +10,18 @@ button {
 
 .btn {
 
+  &__default {
+    color: $colors--typography;
+    background-color: $colors--background;
+
+    @include btn-on-hover($colors-_border--grey_medium);
+
+    &:hover {
+      border-color: $colors-_border--grey_medium;
+    }
+
+  }
+
   &__square {
     border-radius: 8px;
     padding: 0.5rem 1.8rem;

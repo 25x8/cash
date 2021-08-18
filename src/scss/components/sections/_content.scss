@@ -2,17 +2,37 @@
 
     &__top {
 
-        > * {
-            max-width: calc(#{(map-get($container-max-widths, "lg") / 2) - 1} - #{$container-gutter * 2});
-        }
+        //> * {
+        //    max-width: calc(#{(map-get($container-max-widths, "lg") / 2) - 1} - #{$container-gutter * 2});
+        //}
 
         h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .big-picture {
+            display: flex;
+            justify-content: flex-end;
+
+            .lemon-bottle {
+
+                position: relative;
+
+                &:first-child {
+                    transform: translate(-0.5rem,1rem);
+                }
+
+                > div {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
         }
 
     }
-
 
     &__products {
         align-items: center;
@@ -92,8 +112,9 @@
 
 
     &__contacts {
-        background-color: $colors__first;
-        padding-bottom: 2.5rem;
+        background-color: $colors__footer--dark;
+        padding-top: 0.5rem;
+        border-top: 0.5rem solid $colors__border--grey_medium;
 
         form {
             display: flex;
@@ -103,7 +124,7 @@
 
         button {
             max-width: 200px;
-            margin-top: 1rem;
+            align-self: flex-end;
         }
     }
 
