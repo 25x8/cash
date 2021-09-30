@@ -5,7 +5,7 @@ services:
     container_name: node-cash
     restart: unless-stopped
     ports:
-    - "3080:80"
+    - "1111:1111"
     volumes:
       - ./dist:/var/www/html/dist
       - ./app.js:/var/www/html/app.js
