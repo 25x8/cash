@@ -1,10 +1,26 @@
 header {
 
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 56px;
+
+        .logo {
+            height: 36px;
+            margin-top: -8px;
+        }
+
+        @include breakpoint-down(xss) {
+            margin-top: 26px;
+        }
+    }
+
     nav {
 
         ul {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             width: 100%;
             padding-left: 0;
@@ -13,36 +29,30 @@ header {
 
                 position: relative;
                 list-style: none;
-                margin-right: 3.5rem;
-
-                &:last-of-type {
-                    margin-left: auto;
-                    margin-right: 0;
-                    height: 2.8rem;
-                    width: 2.8rem;
-                    padding: 0.7rem;
-                    background-color: #2E2E2E;
-                    border-radius: 1.4rem;
-                }
+                margin: 0 1rem;
 
                 &.active {
 
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 100%;
-                        height: 2rem;
-
-                        background: {
-                            repeat: no-repeat;
-                            image: url("../../src/assets/images/footer/line-indicator.svg");
-                        };
-                    }
+                    font-weight: bold;
+                    //&:after {
+                    //    content: '';
+                    //    position: absolute;
+                    //    left: 0;
+                    //    right: 0;
+                    //    top: 100%;
+                    //    height: 2rem;
+                    //
+                    //    background: {
+                    //        repeat: no-repeat;
+                    //        image: url("../../src/assets/images/footer/line-indicator.svg");
+                    //    };
+                    //}
                 }
             }
+        }
 
+        @include breakpoint-down(sm) {
+            display: none;
         }
     }
 }

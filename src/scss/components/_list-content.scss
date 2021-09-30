@@ -1,0 +1,40 @@
+.list-content {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        background: #F5F7F9;
+        border-radius: 16px;
+        display: flex;
+        height: 66px;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .list-content--text {
+            color: #A7A7A7;
+        }
+
+        @include breakpoint-down(sm) {
+            height: 80px;
+        }
+
+        @include breakpoint-down(iphone) {
+            height: 105px;
+        }
+
+
+    }
+}
+
+.simple__list--ul {
+
+    .list-content {
+        &--icon {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 16px 32px;
+            color: #D8D8D8;
+        }
+    }
+}
+

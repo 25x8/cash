@@ -13,12 +13,13 @@ html {
 }
 
 body {
-  color: $colors--background;
+  color: $colors--typography;
   background-color: $colors--background;
+  margin: 0;
 }
 
 a {
-  color: $colors--background;
+  color: $colors--typography;
   text-decoration: none;
 }
 

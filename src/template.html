@@ -8,241 +8,250 @@
 </head>
 
 <body>
-<picture id="bacgkround-img">
-    <source srcset="<%=require('./assets/images/background.png')%>">
-    <img class="" src="<%=require('./assets/images/background.png')%>"
-         alt="background">
+<picture id="background-img">
+    <img class="" src="<%=require('./assets/images/background.svg')%>" alt="background">
+</picture>
+<picture id="background-img-tablet">
+    <img class="" src="<%=require('./assets/images/background--tablet.svg')%>" alt="background-tablet">
+</picture>
+<picture id="background-img-min">
+    <img class="" src="<%=require('./assets/images/background--min.svg')%>" alt="background-tablet">
+</picture>
+<picture id="background-img-iphone">
+    <img class="" src="<%=require('./assets/images/background--iphone.svg')%>" alt="background-tablet">
 </picture>
 <header>
-    <h1 class="hidden hidden--heading">Лимонады Неверкино</h1>
-    <nav class="container-def">
-        <ul class="navigation">
-            <li class="active">Главная</li>
-            <li>Лавка</li>
-            <li>О заводе</li>
-            <li>Награды</li>
-            <li>Обратная связь</li>
-            <li>
-                <picture>
-                    <source srcset="<%=require('./assets/icons/header/cart.svg')%>">
-                    <img class="" src="<%=require('./assets/icons/header/cart.svg')%>"
-                         alt="Корзина">
-                </picture>
-            </li>
-        </ul>
-    </nav>
+    <div class="header__menu container-def">
+        <div class="logo">
+            <picture>
+                <img class="" src="<%=require('./assets/icons/logo.svg')%>" alt="Лого Кэш">
+            </picture>
+        </div>
+        <nav class="top-navigation">
+            <ul class="navigation">
+                <li class="active">Главная</li>
+                <li>Преимущества</li>
+                <li>FAQ</li>
+                <li>Условия</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <div class="container-def logo">
-        <picture>
-            <source srcset="<%=require('./assets/icons/logo.png')%>">
-            <img class="" src="<%=require('./assets/icons/logo.png')%>"
-                 alt="Лого Неверкино-лемонад">
-        </picture>
-    </div>
-    <section class="content content__top container-def mode__pb--4">
+    <div class="background--grey"></div>
+    <section class="content content__top container-def">
         <div class="content--row mode__flex">
-            <div class="container__col--6">
-                <h1>Сохраняя традиции</h1>
+            <div class="container-main-text">
+                <h1>Принимайте чаевые и бонусы банковской картой по QR‑коду</h1>
                 <p>
-                    <b>Лимонад</b>, который изготавливают по старинным семейным
-                    рецептам <strong>в поселке Неверкино с 1960 года</strong>.
-                    Невероятный вкус из натуральных ингредиентов!
+                    Платформа "НЕТМОНЕТ" дает вашим гостям возможность быстро и легко отблагодарить персонал банковской
+                    картой, а также оставить отзыв об обслуживании в вашем заведении.
                 </p>
                 <div class="btn container__btn">
-                    <button class="btn btn__img btn__img--right-arrow btn__first">Ассортимент</button>
-                    <button class="btn btn__second">Сотрудничество</button>
+                    <button class="btn btn__square btn__first">Подключить заведение</button>
+                    <button class="btn btn__square btn__second">Оставить чаевые</button>
                 </div>
             </div>
-            <div class="container__col--6 big-picture">
-                <div class="lemon-bottle">
-                    <div class="lemon">
-                        <picture>
-                            <source srcset="<%=require('./assets/images/header/lemon_top.png')%>">
-                            <img class="" src="<%=require('./assets/images/header/lemon_top.png')%>"
-                                 alt="Лимон">
-                        </picture>
-                    </div>
-                    <div class="bottle">
-                        <picture>
-                            <source srcset="<%=require('./assets/images/header/bottle_top.png')%>">
-                            <img class="" src="<%=require('./assets/images/header/bottle_top.png')%>"
-                                 alt="Лимон">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content content__products container-def mode__pt--5">
-        <div class="splide__content">
-            <div class="splide">
-                <div data-glide-el="track" class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="card card__product">
-                                <div class="card card--border">
-                                    <div class="card__product--image">
-                                        <picture>
-                                            <source srcset="<%=require('./assets/images/cards/bottle-default.png')%>">
-                                            <img class="" src="<%=require('./assets/images/cards/bottle-default.png')%>"
-                                                 alt="лимонад">
-                                        </picture>
-                                    </div>
-                                    <h2>
-                                        <div class="card card__title">Буратино</div>
-                                    </h2>
-                                    <button class="btn btn__img btn__img--bascket btn__square btn__first">
-                                        <div class="btn--text">В корзину</div>
-                                    </button>
-                                </div>
-                                <div class="card__product--description mode__my--1">
-                                    Состав: родниковая «подготовленная» вода, сахар-песок, регулятор
-                                    кислотности-лимонная кислота,
-                                    идентичный натуральному ароматизатор «Груша», колер, консервант-натрия бензонат.
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-def container__catalog-btn mode__flex mode__center mode__mb--1">
-            <button class="btn__img btn__img--cart btn btn__square">
-                Перейти в каталог
-            </button>
         </div>
     </section>
 
-    <section class="content content__description container-def mode__pt--2  mode__pb--4">
+    <section class="content content__description container-def mode__pt--2">
         <h2 class="mode__text--center mode__mb--4">
-            О нас
+            Преимущества для заведения
         </h2>
-        <div class="content--row mode__flex">
-            <div class="container__col--6">
-                <h2>Тот самый вкус детства</h2>
-                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
-                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
-                </p>
-            </div>
-            <div class="container__col--6">
-                <picture>
-                    <source srcset="<%=require('./assets/images/description/1.png')%>">
-                    <img class="" src="<%=require('./assets/images/description/1.png')%>" alt="лимонад">
-                </picture>
-            </div>
-        </div>
-        <div class="content--row mode__flex">
-            <div class="container__col--6">
-                <h2>Тот самый вкус детства</h2>
-                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
-                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
-                </p>
-            </div>
-            <div class="container__col--6">
-                <picture>
-                    <source srcset="<%=require('./assets/images/description/2.png')%>">
-                    <img class="" src="<%=require('./assets/images/description/2.png')%>" alt="лимонад">
-                </picture>
-            </div>
-        </div>
-        <div class="content--row mode__flex">
-            <div class="container__col--6">
-                <h2>Тот самый вкус детства</h2>
-                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
-                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
-                </p>
-            </div>
-            <div class="container__col--6">
-                <picture>
-                    <source srcset="<%=require('./assets/images/description/3.png')%>">
-                    <img class="" src="<%=require('./assets/images/description/3.png')%>" alt="лимонад">
-                </picture>
-            </div>
-        </div>
-        <div class="content--row mode__flex">
-            <div class="container__col--6">
-                <h2>Тот самый вкус детства</h2>
-                <p>Как же удалось коллективу кооператива Неверкинский лимонад во главе с Наилем Сяитовичем Мянзелиным,
-                    сохранить традицию изготовления этого вкуснейшего напитка, который так любят и взрослые, и дети.
-                </p>
-            </div>
-            <div class="container__col--6">
-                <picture>
-                    <source srcset="<%=require('./assets/images/description/4.png')%>">
-                    <img class="" src="<%=require('./assets/images/description/4.png')%>" alt="лимонад">
-                </picture>
-            </div>
-        </div>
-    </section>
-    <section class="content content__certificates mode__pt--2 mode__pb--3">
-        <div class="container-def">
-            <h2 class="mode__text--center mode__text--black">
-                Награды и сертификаты
-            </h2>
-            <div class="splide">
-                <div data-glide-el="track" class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <picture>
-                                <source srcset="<%=require('./assets/images/certificates/default.png')%>">
-                                <img class="" src="<%=require('./assets/images/certificates/default.png')%>"
-                                     alt="лимонад">
-                            </picture>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content content__contacts mode__pb--2">
-        <div class="container-def">
-            <h2 class="mode__text--center mode__mt--1">
-                Обратная связь
-            </h2>
-            <div class="mode__flex mode__pt--1">
-                <form class="content__contacts--form container__col--5">
-                    <div class="contact contact__fields mode__flex mode__flex--column">
-                        <div id="invalid-message" class="invalid-message">
-                            Пожалуйста, заполните все поля
+        <div class="advantages">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="advantages__card">
+                            <div class="advantages__card--text">
+                                <div class="card--title">
+                                    Чаевые
+                                </div>
+                                <div class="card--text">
+                                    До +30% дополнительных чаевых для персонала
+                                </div>
+                            </div>
+                            <div class="advantages__card--img">
+                                <picture>
+                                    <img class="" src="<%=require('./assets/images/advantages/chai.svg')%>"
+                                         alt="Лого Кэш">
+                                </picture>
+                            </div>
                         </div>
-                        <input type="text" class="contact__fields contact__fields--name" id="field--name"
-                               placeholder="Ваше имя" aria-label="name-input" required>
-                        <input type="tel" class="contact__fields contact__fields--phone" id="field--phone"
-                               placeholder="Телефон" aria-label="phone-input"
-                               pattern="(\+7) (\(\d{3}\) |\s\d{3}-|\d{5})(\d{5}|\s?\d{3}-\d{2}-\d{2})" required>
-                        <label for="field--message"></label>
-                        <textarea class="contact__fields contact__fields--message" name="message-input"
-                                  id="field--message"
-                                  cols="30" rows="5"
-                                  placeholder="Напишите нам" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn__default btn__square" id="submit">
-                        Отправить
-                    </button>
-                </form>
-                <div class="contact contact__info container__col--5 mode__flex mode__flex--column">
-                    <div class="contact__info contact__info--phone">
-                        <a href="tel:+78000000000">+7 (800) 000-00-00</a>
+                    <div class="swiper-slide">
+                        <div class="advantages__card">
+                            <div class="advantages__card--text">
+                                <div class="card--title">
+                                    Чаевые
+                                </div>
+                                <div class="card--text">
+                                    Дополнительный доход с моментальными выплатами
+                                </div>
+                            </div>
+                            <div class="advantages__card--img">
+                                <picture>
+                                    <img class="" src="<%=require('./assets/images/advantages/analityc.svg')%>"
+                                         alt="Лого Кэш">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact__info contact__info--site">
-                        <a href="#" rel="nofollow">neverkino-lemonade.ru</a>
+                    <div class="swiper-slide">
+                        <div class="advantages__card">
+                            <div class="advantages__card--text">
+                                <div class="card--title">
+                                    Чаевые
+                                </div>
+                                <div class="card--text">
+                                    Моментально реагируйте на обратную связь от Гостей
+                                </div>
+                            </div>
+                            <div class="advantages__card--img">
+                                <picture>
+                                    <img class="" src="<%=require('./assets/images/advantages/loyal.svg')%>"
+                                         alt="Лого Кэш">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact__info contact__info--email">
-                        <a href="mailto:test@test.ru">test@test.ru</a>
-                    </div>
-                    <div class="contact__info contact__info--hours">
-                        <span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 14:00</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content content__simple container-def  mode__mt--7">
+           <div class="simple__image">
+               <picture>
+                   <img class="" src="<%=require('./assets/images/simple/phone.png')%>"
+                        alt="Просто и понятно">
+               </picture>
+           </div>
+        <div class="simple__list">
+            <div class="simple__list--text">
+                <h2 class="mode__mb--4">
+                    Просто и понятно
+                </h2>
+                <div class="text__content">
+                    Гости оставляют чаевые за несколько секунд.
+                    Без установки приложения.
+                </div>
+            </div>
+            <div class="simple__list--ul">
+                <ul class="list-content">
+                    <li>
+                        <div class="list-content--icon">
+                            1
+                        </div>
+                        <div class="list-content--text">
+                            Отсканируйте QR-код и оставьте чаевые своей картой.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            2
+                        </div>
+                        <div class="list-content--text">
+                            Наведите камеру на изображение QR-кода на визитке или чеке.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            3
+                        </div>
+                        <div class="list-content--text">
+                            Выберите размер чаевых, оставьте оценку и отзыв.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            4
+                        </div>
+                        <div class="list-content--text">
+                            Переведите одним касанием или картой банка через Apple Pay или Google Pay.
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn__square btn__first">Демо</button>
+            </div>
+        </div>
+    </section>
+    <section class="content content__account container-def  mode__mt--9">
+        <h2 class="mode__text--left mode__mb--4 default-title">
+            Личный кабинет
+        </h2>
+        <div class="swiper-card-account">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <picture>
+                            <img class="" src="<%=require('./assets/images/cards/account.svg')%>" alt="Лого Кэш">
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="content content__compact container-def  mode__mt--4">
+        <div class="swiper-card-compact">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card--one">
+                    <div class="card">
+                        <h2 class="mode__text--left mode__mb--4 default-title">
+                            Компактно и удобно.
+                        </h2>
+                        <picture>
+                            <img class="" src="<%=require('./assets/images/cards/compact-card-1.svg')%>" alt="Компактно и уно">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-slide card--two">
+                    <div class="card">
+                        <h2 class="mode__text--left mode__mb--4 default-title">
+                            Доступ и контроль всех транзакций и отзывов.
+                        </h2>
+                        <picture>
+                            <img class="" src="<%=require('./assets/images/cards/compact-card-2.svg')%>" alt="Лого Кэш">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-def mode__mt--5 mode__flex mode__center">
+        <button class="btn btn__square btn__third">Подключить заведение</button>
+        </div>
+    </section>
+
+    <section class="content content__settings container-def mode__pt--2">
+        <h2 class="mode__text--center mode__mb--4">
+            Настройка платформы под ваш бизнес
+        </h2>
+    </section>
+
 </main>
 <footer>
-    <div class="container-def mode__flex">
-        <span class="mode__text--left">Neverkino-lemonade</span>
-        <span class="mode__text--right">Design by <strong>High Blow Media Group</strong></span>
+    <div class="footer__menu container-def">
+        <div class="logo">
+            <picture>
+                <img class="" src="<%=require('./assets/icons/footer-logo.svg')%>" alt="Лого Футер Кэш">
+            </picture>
+        </div>
+        <nav class="top-navigation">
+            <ul class="navigation">
+                <li>Правила и условия пользования</li>
+                <li>Политика конфиденциальности</li>
+                <li>Поддержка</li>
+            </ul>
+        </nav>
+        <ul class="footer_contacts cont">
+            <li>+7 (333) 333-333-33</li>
+            <li>yourmail@mail.ru</li>
+        </ul>
     </div>
 </footer>
 

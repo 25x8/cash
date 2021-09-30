@@ -1,14 +1,52 @@
 .container {
 
+    &-main-text {
+
+        p {
+            font-weight: bold;
+        }
+
+        @include breakpoint-down(lg) {
+            max-width: 58%;
+        }
+        @include breakpoint-down(sm) {
+            max-width: 68%;
+        }
+
+        @include breakpoint-down(xs) {
+            max-width: 72vw;
+        }
+
+        @include breakpoint-down(iphone) {
+            max-width: 70vw;
+        }
+    }
+
     &-def {
-        padding-left: $container-gutter;
-        padding-right: $container-gutter;
+
+        h2.default-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 24px;
+        }
+
         margin-left: auto;
         margin-right: auto;
 
         @each $size, $breakpoint in $breakpoints {
             @include breakpoint-down($size) {
                 max-width: map-get($container-max-widths, $size);
+                @if $size == sm {
+                    padding-left: $container-gutter;
+                    padding-right: $container-gutter;
+                }
+
+                @if $size == xss {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -22,7 +60,24 @@
         justify-content: flex-start;
 
         & > :not(:last-child) {
-            margin-right: 2rem;
+            margin-right: 1.5rem;
+
+            @include breakpoint-down(xss) {
+                margin-right: 0.4rem;
+            }
+        }
+
+        @include breakpoint-down(iphone) {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            display: flex;
+
+            & > *{
+                font-size: 14px!important;
+                padding: 0.5rem 16px;
+                height: 54px!important;
+            }
         }
     }
 

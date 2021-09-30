@@ -1,12 +1,62 @@
-#bacgkround-img {
+@mixin imgProps() {
     img {
         position: absolute;
         object-fit: cover;
         left: 0;
         right: 0;
         top: 0;
-        height: 800px;
         width: 100%;
         z-index: -1;
+        height: 662px;
+    }
+}
+
+.background {
+ &--grey {
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 1274px;
+     width: 100%;
+     z-index: -1;
+     height: 1800px;
+     background-color: #F5F7F9;
+ }
+}
+
+#background-img {
+   @include imgProps;
+
+    @include breakpoint-down(xs) {
+        display: none;
+    }
+}
+
+#background-img-tablet {
+    display: none;
+    @include imgProps;
+
+    @include breakpoint-down(xs) {
+        display: block;
+    }
+}
+
+#background-img-min {
+    display: none;
+    @include imgProps;
+
+    @include breakpoint-down(xss) {
+        display: block;
+    }
+}
+
+
+
+#background-img-iphone {
+    display: none;
+    @include imgProps;
+
+    @include breakpoint-down(iphone) {
+        display: block;
     }
 }

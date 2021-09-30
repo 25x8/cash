@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^2.4.21",
-    "imask": "^6.1.0"
+    "imask": "^6.1.0",
+    "swiper": "^7.0.7"
   }
 }

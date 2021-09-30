@@ -1,8 +1,27 @@
 footer {
-    background-color: $colors__footer--dark;
-    div {
-        border-top: 1px solid $colors__border--light;
+    background-color: $colors--typography;
+    color: $colors--background;
+    padding: 60px 0;
+    font-size: 14px;
+
+    .footer__menu {
+        display: flex;
+        width: 665px;
         justify-content: space-between;
-        padding: 2.5rem 0;
     }
+
+    .logo {
+        height: 34px;
+    }
+
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 24px;
+        }
+    }
+
+
 }

@@ -1,11 +1,12 @@
 button {
   color: $colors--typography;
   border-radius: 1.6rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: $btn-padding-horizontal $btn-padding-vertical;
   cursor: pointer;
-  border: 1px solid;
-
+  border: none;
+  height: 2.7rem;
+  font-weight: bold;
 }
 
 .btn {
@@ -24,7 +25,11 @@ button {
 
   &__square {
     border-radius: 8px;
-    padding: 0.5rem 1.8rem;
+    padding: 0.5rem 1.3rem;
+
+    @include breakpoint-down(xs) {
+      padding: 0.5rem 1rem;
+    }
   }
 
 
@@ -32,17 +37,24 @@ button {
     color: $colors--background;
     background-color: $colors--first;
 
-    @include btn-on-hover($colors--background, $colors--typography);
+
+    @include btn-on-hover($colors--typography);
 
   }
 
 
   &__second {
-    background-color: transparent;
-    border-color: $colors--background;
+    background-color: $colors--second;
+    color: $colors--typography;
+
+    @include btn-on-hover($colors--first);
+  }
+
+  &__third {
+    background-color: $colors--typography;
     color: $colors--background;
 
-    @include btn-on-hover($colors--green_salad);
+    @include btn-on-hover($colors--first);
   }
 
 

@@ -14,7 +14,7 @@
 
 @mixin create-y-margins() {
     $margin: 0.5rem;
-    @for $i from 1 through 5 {
+    @for $i from 1 through 10 {
         $margin: $margin + 0.5;
         .mode__my--#{$i} {
             margin-top: $margin;
