@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  server:
+    image: node:14
+    container_name: node-cash
+    restart: unless-stopped
+    ports:
+    - "3080:80"
+    volumes:
+      - ./dist:/var/www/html/dist
+      - ./app.js:/var/www/html/app.js
+    command: npm start app.js
