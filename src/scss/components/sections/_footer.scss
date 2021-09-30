@@ -8,6 +8,25 @@ footer {
         display: flex;
         width: 665px;
         justify-content: space-between;
+
+        @include breakpoint-down(xss) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    .footer__menus {
+        display: flex;
+
+        @include breakpoint-down(xss) {
+            flex-direction: column;
+        }
+
+        .cont {
+            li {
+                min-width: 130px;
+            }
+        }
     }
 
     .logo {
@@ -21,6 +40,10 @@ footer {
         li {
             margin-bottom: 24px;
         }
+        @include breakpoint-down(iphone) {
+            padding-left: 0;
+        }
+
     }
 
 

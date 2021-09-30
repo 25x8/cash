@@ -124,12 +124,12 @@
     </section>
 
     <section class="content content__simple container-def  mode__mt--7">
-           <div class="simple__image">
-               <picture>
-                   <img class="" src="<%=require('./assets/images/simple/phone.png')%>"
-                        alt="Просто и понятно">
-               </picture>
-           </div>
+        <div class="simple__image">
+            <picture>
+                <img class="" src="<%=require('./assets/images/simple/phone.png')%>"
+                     alt="Просто и понятно">
+            </picture>
+        </div>
         <div class="simple__list">
             <div class="simple__list--text">
                 <h2 class="mode__mb--4">
@@ -205,7 +205,8 @@
                             Компактно и удобно.
                         </h2>
                         <picture>
-                            <img class="" src="<%=require('./assets/images/cards/compact-card-1.svg')%>" alt="Компактно и уно">
+                            <img class="" src="<%=require('./assets/images/cards/compact-card-1.svg')%>"
+                                 alt="Компактно и уно">
                         </picture>
                     </div>
                 </div>
@@ -223,7 +224,7 @@
         </div>
 
         <div class="container-def mode__mt--5 mode__flex mode__center">
-        <button class="btn btn__square btn__third">Подключить заведение</button>
+            <button class="btn btn__square btn__third">Подключить заведение</button>
         </div>
     </section>
 
@@ -231,6 +232,108 @@
         <h2 class="mode__text--center mode__mb--4">
             Настройка платформы под ваш бизнес
         </h2>
+    </section>
+
+    <section class="content content__best container-def  mode__mt--3">
+        <div class="best__list">
+            <div class="best__list--text">
+                <h2 class="mode__mb--4">
+                    Лучшие условия
+                </h2>
+            </div>
+            <div class="best__list--ul">
+                <ul class="list-content">
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/laughing.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            Полностью бесплатно для заведения
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/calc.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            Мгновенное зачисление чаевых на любую банковскую карту
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/percent.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            1-2% средняя комиссия с чаевых, но не более 5%
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn__square btn__third">Подключить заведение</button>
+            </div>
+        </div>
+        <div class="best__image">
+            <picture>
+                <img class="" src="<%=require('./assets/images/simple/best-conditions.svg')%>"
+                     alt="Просто и понятно">
+            </picture>
+        </div>
+    </section>
+
+    <section class="content content__best container-def  mode__mt--3 mode__mb--3">
+        <div class="best__list">
+            <div class="best__list--text">
+                <h2 class="mode__mb--4">
+                    Лучшие условия
+                </h2>
+            </div>
+            <div class="best__list--ul">
+                <ul class="list-content">
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/speed.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            Быстрая настройка системы оплаты под ключ.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/graphic.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            Помощь на каждом этапе сотрудничества – от обучения сотрудников до поддержки пользователей.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-content--icon">
+                            <picture>
+                                <img class="" src="<%=require('./assets/icons/simple/lock.svg')%>" alt="Бесплатно>">
+                            </picture>
+                        </div>
+                        <div class="list-content--text">
+                            Отсутствие запросов к конфиденциальным сведениям о вашей компании.
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn__square btn__third">Подключить заведение</button>
+            </div>
+        </div>
+        <div class="best__image">
+            <picture>
+                <img class="" src="<%=require('./assets/images/simple/easy-conf.svg')%>"
+                     alt="Просто и понятно">
+            </picture>
+        </div>
     </section>
 
 </main>
@@ -241,17 +344,19 @@
                 <img class="" src="<%=require('./assets/icons/footer-logo.svg')%>" alt="Лого Футер Кэш">
             </picture>
         </div>
-        <nav class="top-navigation">
-            <ul class="navigation">
-                <li>Правила и условия пользования</li>
-                <li>Политика конфиденциальности</li>
-                <li>Поддержка</li>
+        <div class="footer__menus">
+            <nav class="top-navigation">
+                <ul class="navigation">
+                    <li>Правила и условия пользования</li>
+                    <li>Политика конфиденциальности</li>
+                    <li>Поддержка</li>
+                </ul>
+            </nav>
+            <ul class="footer_contacts cont">
+                <li>+7 (333) 333-333-33</li>
+                <li>yourmail@mail.ru</li>
             </ul>
-        </nav>
-        <ul class="footer_contacts cont">
-            <li>+7 (333) 333-333-33</li>
-            <li>yourmail@mail.ru</li>
-        </ul>
+        </div>
     </div>
 </footer>
 
