@@ -7,6 +7,6 @@ services:
     ports:
     - "1111:1111"
     volumes:
-      - ./dist:/var/www/html/dist
+      - ./dist:/var/www/html/cash/dist
       - ./app.js:/var/www/html/app.js
     command: npm start app.js

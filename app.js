@@ -6,10 +6,10 @@ const app = express();
 const PORT = 1111;
 
 if(process.env.NODE_ENV === 'production') {
-    app.use('/', express.static(path.join(__dirname, 'lemonade', 'dist')));
+    app.use('/', express.static(path.join(__dirname, 'cash', 'dist')));
 
     app.get('*', (req, res) => {
-            res.sendFile(path.resolve(__dirname, 'lemonade', 'dist', 'index.html'))
+            res.sendFile(path.resolve(__dirname, 'cash', 'dist', 'index.html'))
     });
 }
 
