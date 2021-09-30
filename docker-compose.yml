@@ -9,4 +9,4 @@ services:
     volumes:
       - ./dist:/var/www/html/cash/dist
       - ./app.js:/var/www/html/app.js
-    command: npm start app.js
+#    command: npm start app.js
