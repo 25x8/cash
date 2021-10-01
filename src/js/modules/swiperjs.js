@@ -16,4 +16,8 @@ export function initSwiper() {
     new Swiper('.swiper-card-compact', {
         slidesPerView: 'auto',
     });
+
+    new Swiper('.swiper-settings', {
+        slidesPerView: 'auto',
+    });
 }

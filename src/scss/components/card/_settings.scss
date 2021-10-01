@@ -1,0 +1,111 @@
+.settings {
+    height: 657px;
+    overflow: hidden;
+
+    .swiper-settings {
+
+        height: 100%;
+
+        .swiper-wrapper {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .swiper-slide {
+            width: 294px;
+            height: 542px;
+
+            @include breakpoint-down(sm) {
+                width: 334px;
+
+                .settings__card--img {
+                    transform: translateX(10px);
+                }
+            }
+
+            img {
+                border: 1px solid #EEEEEE;
+                box-sizing: border-box;
+                filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
+                border-radius: 21px;
+            }
+
+            &:first-child {
+                align-self: flex-end;
+                @include breakpoint-down(sm) {
+                    align-self: normal;
+                }
+            }
+
+            &:last-child {
+                img {
+                    object-fit: cover;
+                    object-position: top;
+
+                }
+            }
+        }
+
+    }
+}
+
+.settings__card {
+    width: 294px;
+
+    position: relative;
+    &--img {
+
+
+        img {
+            width: 100%;
+            height: 542px;
+        }
+        &-small {
+
+
+            &-left {
+                position: absolute;
+                top: 0;
+                transform: translate(100%, 322px);
+
+                @include breakpoint-down(sm) {
+                    display: none;
+                }
+
+                &-mobile {
+                    position: absolute;
+                    bottom: 0;
+                    display: none;
+                    transform: translateY(110%);
+                    @include breakpoint-down(sm) {
+                        display: block;
+                    }
+                }
+
+            }
+
+            &-right {
+                position: absolute;
+                top: 0;
+                transform: translate(-100%, 62px);
+
+                @include breakpoint-down(sm) {
+                    display: none;
+                }
+
+                &-mobile {
+                    position: absolute;
+                    bottom: 0;
+                    display: none;
+                    transform: translateY(110%);
+                    @include breakpoint-down(sm) {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
