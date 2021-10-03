@@ -57,6 +57,29 @@ button {
     @include btn-on-hover($colors--first);
   }
 
+  &__tip {
+    width: 90px;
+    height: 66px;
+    font-size: 24px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $colors--background;
+    color: $colors--first;
+    border: 3px solid #EEEEEE;
+    border-radius: 16px;
+
+    &.active-btn {
+      border-color: $colors--first;
+      background-color: $colors--first;
+      color: $colors--background;
+    }
+
+    @include btn-on-hover($colors--first, $colors--background);
+  }
+
 
   &__img {
 

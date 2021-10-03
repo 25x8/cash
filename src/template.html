@@ -203,7 +203,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="btn btn__square btn__first">Демо</button>
+                <button class="btn btn__square btn__first" btn-modal="demo">Демо</button>
             </div>
         </div>
     </section>
@@ -510,6 +510,88 @@
         </div>
     </div>
 </footer>
+<div class="modal-window modal-demo">
+    <div class="modal-wrapper">
+        <div class="modal-wrapper__background">
+            <picture>
+                <img class="" src="<%=require('./assets/images/demo/demo-background.png')%>"
+                     alt="Просто и понятно">
+            </picture>
+        </div>
+        <div class="modal__content">
+            <div class="modal-wrapper__close-btn"></div>
+            <div class="modal__body">
 
+                <div class="welcome-block">
+                    <div class="welcome-block__title">
+                        Добро пожаловать!
+                    </div>
+                    <div class="welcome-block__text">
+                        Чтобы оставить чаевые без наличных или отзыв, введите код сотрудника:
+                    </div>
+                    <div class="welcome-block__number">
+                        342-423
+                    </div>
+                    <div class="welcome-block__button">
+                        <button class="btn btn__square btn__first" btn-action="continue">Продолжить</button>
+                    </div>
+                </div>
+
+                <div class="rate-block">
+                    <div class="rate-block__profile">
+                        <div class="rate-block__profile--avatar">
+                            <picture>
+                                <img class="" src="<%=require('./assets/images/demo/demo-avatar.png')%>"
+                                     alt="Просто и понятно">
+                            </picture>
+                        </div>
+                        <div class="rate-block__profile--name">Александр</div>
+                        <div class="rate-block__profile--place">Чартер Паб/Ростов-на-Дону</div>
+                        <div class="rate-block__profile--status">
+                            <div class="profile--status--text">
+                                Всегда будьте людьми) хорошего дня!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-block__rate">
+                        <div class="rate__amount">
+                            <div class="rate__amount--calc">
+                                <div class="rate__amount--text">
+                                    Сумма в чеке: <span>1670</span> р.
+                                </div>
+                                <div class="calc--val"> 124 р.</div>
+                                <div class="rate__amount--val-btns">
+                                    <button class="btn btn__square btn__tip" val="5">5%</button>
+                                    <button class="btn btn__square btn__tip" val="10">10%</button>
+                                    <button class="btn btn__square btn__tip" val="15">15%</button>
+                                    <button class="btn btn__square btn__tip" val="20">20%</button>
+                                </div>
+                            </div>
+
+
+                            <div class="rate__amount--stars">
+                                <div class="stars__text">
+                                    Вам понравилось?
+                                </div>
+                                <div class="stars__group">
+                                    <div class="stars__group--star" val="1"></div>
+                                    <div class="stars__group--star" val="2"></div>
+                                    <div class="stars__group--star" val="3"></div>
+                                    <div class="stars__group--star" val="4"></div>
+                                    <div class="stars__group--star" val="5"></div>
+                                </div>
+                            </div>
+
+                            <div class="rate__amount--pay">
+                                <button class="btn btn__square btn__third">Оплатить картой</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
