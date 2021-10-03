@@ -9,6 +9,11 @@ header {
         .logo {
             height: 36px;
             margin-top: -8px;
+
+            @include breakpoint-down(sm) {
+                margin-top: 10px;
+            }
+
         }
 
         @include breakpoint-down(xss) {
