@@ -31,18 +31,28 @@
     }
 
     &__number {
-        padding: 22px 34px;
         border: 1px solid #EEEEEE;
         box-sizing: border-box;
         border-radius: 16px;
         color: $colors--first;
         width: 100%;
         margin: 24px;
-        font-size: 40px;
+
         text-align: center;
 
+        input {
+            width: 100%;
+            border: none;
+            color: #27AE60;
+            font-size: 40px;
+            padding: 22px 34px;
+        }
+
         @include breakpoint-down(xss) {
-            font-size: 30px;
+
+            input {
+                font-size: 30px;
+            }
         }
 
     }
