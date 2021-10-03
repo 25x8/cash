@@ -69,6 +69,7 @@ function closeModal(modal, modalBody) {
     document.querySelector('.welcome-background').style.display = 'inherit';
     document.querySelector('.bye-background').style.display = 'none';
 
+    modalBody.classList.remove('rate');
     modalBody.classList.remove('good-bye');
     modalBody.classList.add('welcome');
 
