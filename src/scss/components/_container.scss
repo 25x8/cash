@@ -1,6 +1,9 @@
 .container {
 
     &-main-text {
+        background-color: #ffffffcc;
+        padding: 16px;
+        border-radius: 16px;
 
         p {
             font-weight: bold;
@@ -11,7 +14,7 @@
         }
 
         @include breakpoint-down(md) {
-            max-width: 80%;
+            max-width: 75%;
         }
 
         @include breakpoint-down(sm) {
@@ -19,12 +22,9 @@
         }
 
         @include breakpoint-down(xs) {
-            max-width: 72vw;
+            max-width: 100%;
         }
 
-        @include breakpoint-down(iphone) {
-            max-width: 70vw;
-        }
     }
 
     &-def {
@@ -73,15 +73,12 @@
         }
 
         @include breakpoint-down(iphone) {
-            position: absolute;
-            left: 16px;
-            right: 16px;
             display: flex;
 
-            & > *{
-                font-size: 14px!important;
+            & > * {
+                font-size: 14px !important;
                 padding: 0.5rem 16px;
-                height: 54px!important;
+                height: 54px !important;
             }
         }
     }

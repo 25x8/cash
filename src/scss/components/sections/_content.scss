@@ -199,13 +199,14 @@
             transform: translateY(-44px);
 
             img {
-                height: 584px;
+                transform: scale(1.5);
                 object-fit: cover;
+                width: 100%;
             }
 
             @include breakpoint-down(md) {
                 img {
-                    width: 100%
+                    transform: translate(-30px, 20px) scale(1.3);
                 }
             }
 

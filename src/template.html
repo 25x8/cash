@@ -29,11 +29,31 @@
         </div>
         <nav class="top-navigation">
             <ul class="navigation">
-                <li class="active">Главная</li>
-                <li>Преимущества</li>
-                <li>FAQ</li>
-                <li>Условия</li>
-                <li>Контакты</li>
+                <li class="active">
+                    <a class="active" aria-current="page" href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a class="active" aria-current="page" href="#advantages">
+                        Преимущества
+                    </a>
+                </li>
+                <li>
+                    <a class="active" aria-current="page" href="#faq">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a class="active" aria-current="page" href="#best">
+                        Условия
+                    </a>
+                </li>
+                <li>
+                    <a class="active" aria-current="page" href="#contacts">
+                        Контакты
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -49,15 +69,15 @@
                     картой, а также оставить отзыв об обслуживании в вашем заведении.
                 </p>
                 <div class="btn container__btn">
-                    <button class="btn btn__square btn__first">Подключить заведение</button>
-                    <button class="btn btn__square btn__second">Оставить чаевые</button>
+                    <button class="btn btn__square btn__third">Подключить заведение</button>
+                    <button class="btn btn__square btn__first" btn-modal="demo">Оставить чаевые</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="content content__description container-def">
-        <h2 class="mode__text--center mode__mb--4">
+        <h2 class="mode__text--center mode__mb--4" id="advantages">
             Преимущества для заведения
         </h2>
         <div class="advantages">
@@ -154,7 +174,7 @@
     <section class="content content__simple container-def  mode__mt--7">
         <div class="simple__image">
             <picture>
-                <img class="" src="<%=require('./assets/images/simple/phone.png')%>"
+                <img class="" src="<%=require('./assets/images/simple/best-conditions.png')%>"
                      alt="Просто и понятно">
             </picture>
         </div>
@@ -317,7 +337,7 @@
     </section>
 
     <section class="content content__best container-def  mode__mt--3">
-        <div class="best__list">
+        <div class="best__list" id="best">
             <div class="best__list--text">
                 <h2 class="mode__mb--4">
                     Лучшие условия
@@ -368,7 +388,7 @@
     </section>
 
     <section class="content content__faq container-def  mode__mt--5 mode__pt--3">
-        <div class="background-line"></div>
+        <div class="background-line" id="faq"></div>
         <div class="simple__image">
             <picture>
                 <img class="" src="<%=require('./assets/images/faq/faq.svg')%>"
@@ -503,7 +523,7 @@
                     <li>Поддержка</li>
                 </ul>
             </nav>
-            <ul class="footer_contacts cont">
+            <ul class="footer_contacts cont" id="contacts">
                 <li>+7 (333) 333-333-33</li>
                 <li>yourmail@mail.ru</li>
             </ul>
@@ -530,7 +550,16 @@
             <div class="modal-wrapper__close-btn"></div>
             <div class="modal__body welcome">
                 <div class="loader">
-                    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    <div class="lds-roller">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="welcome-block">
                     <div class="welcome-block__title">

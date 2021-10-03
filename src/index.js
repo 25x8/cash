@@ -1,15 +1,14 @@
 import  './scss/style.scss';
 import {initDropdown} from "./js/components/dropdown";
-import {initValidation} from "./js/validation/validation";
-import {bindShowAnimationOnHover} from "./js/effects/effects";
 import {initSwiper} from "./js/modules/swiperjs";
 import {initModals} from "./js/components/modalWindow";
 import {initNextPageAction} from "./js/effects/nextPageInModal";
 import {initTipButtons} from "./js/components/tipButtons";
+import {initScrollObserver} from "./js/effects/scrollObserver";
 
 document.body.onload = () => {
     initSwiper();
-    bindShowAnimationOnHover();
+    initScrollObserver();
     initModals();
     initDropdown();
     initNextPageAction({

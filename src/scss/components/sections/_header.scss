@@ -35,23 +35,14 @@ header {
                 position: relative;
                 list-style: none;
                 margin: 0 1rem;
+                cursor: pointer;
 
                 &.active {
-
                     font-weight: bold;
-                    //&:after {
-                    //    content: '';
-                    //    position: absolute;
-                    //    left: 0;
-                    //    right: 0;
-                    //    top: 100%;
-                    //    height: 2rem;
-                    //
-                    //    background: {
-                    //        repeat: no-repeat;
-                    //        image: url("../../src/assets/images/footer/line-indicator.svg");
-                    //    };
-                    //}
+                }
+
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }

@@ -47,7 +47,7 @@ button {
     background-color: $colors--second;
     color: $colors--typography;
 
-    @include btn-on-hover($colors--first);
+    @include btn-on-hover($colors--typography, $colors--background);
   }
 
   &__third {

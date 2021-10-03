@@ -10,6 +10,13 @@
         align-items: center;
         margin-bottom: 16px;
 
+        &.active {
+            .list-content--text,
+            .list-content--icon {
+                color: $colors--first;
+            }
+        }
+
         .list-content--text {
             color: #A7A7A7;
             min-width: 500px;

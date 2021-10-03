@@ -39,6 +39,11 @@ footer {
 
         li {
             margin-bottom: 24px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
         @include breakpoint-down(iphone) {
             padding-left: 0;
