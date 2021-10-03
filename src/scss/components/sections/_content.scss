@@ -147,6 +147,18 @@
         .swiper-card-account {
             overflow: hidden;
         }
+
+        @include breakpoint-down(sm) {
+
+                padding-left: 20px;
+
+        }
+
+        @include breakpoint-down(xs) {
+
+                padding-left: 0;
+
+        }
     }
 
     &__compact {
@@ -162,7 +174,6 @@
 
             .swiper-slide {
                 @include breakpoint-down(md) {
-                    margin-left: 27px;
                     margin-right: 27px;
                 }
             }
@@ -325,6 +336,10 @@
     &__faq {
         display: flex;
 
+        @include breakpoint-down(xs) {
+            position: relative;
+        }
+
         .simple__image {
             width: 474px;
             position: relative;
@@ -337,6 +352,7 @@
             @include breakpoint-down(sm) {
                 display: none;
             }
+
 
             picture {
 
@@ -387,21 +403,16 @@
             background: #F5F7F9;
             z-index: -1;
 
-            @include breakpoint-down(md) {
-                height: 524px;
-            }
 
             @include breakpoint-down(sm) {
                 height: 445px;
             }
 
-            @include breakpoint-down(xss) {
-                height: 455px;
+            @include breakpoint-down(xs) {
+                height: 100%;
             }
 
-            @include breakpoint-down(iphone) {
-                height: 520px;
-            }
+
         }
 
     }
