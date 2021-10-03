@@ -1,3 +1,4 @@
+
 export function bindShowAnimationOnHover() {
 
     const productCards = document.querySelectorAll('.content__products .splide__slide');

@@ -197,6 +197,7 @@
             height: 540px;
             width: 604px;
             transform: translateY(-44px);
+            overflow: hidden;
 
             img {
                 transform: scale(1.5);
@@ -336,9 +337,10 @@
 
     &__faq {
         display: flex;
+        position: relative;
 
-        @include breakpoint-down(xs) {
-            position: relative;
+        .container-def {
+            display: flex;
         }
 
         .simple__image {
@@ -400,18 +402,9 @@
             left: 0;
             right: 0;
             transform: translateY(-28px);
-            height: 489px;
+            height: 100%;
             background: #F5F7F9;
             z-index: -1;
-
-
-            @include breakpoint-down(sm) {
-                height: 445px;
-            }
-
-            @include breakpoint-down(xs) {
-                height: 100%;
-            }
 
 
         }
