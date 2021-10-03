@@ -9,6 +9,11 @@
         @include breakpoint-down(lg) {
             max-width: 58%;
         }
+
+        @include breakpoint-down(md) {
+            max-width: 80%;
+        }
+
         @include breakpoint-down(sm) {
             max-width: 68%;
         }

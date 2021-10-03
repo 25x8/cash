@@ -12,20 +12,33 @@
 }
 
 .background {
- &--grey {
-     position: absolute;
-     left: 0;
-     right: 0;
-     top: 1274px;
-     width: 100%;
-     z-index: -1;
-     height: 1800px;
-     background-color: #F5F7F9;
- }
+    &--grey {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1236px;
+        width: 100%;
+        z-index: -1;
+        height: 1920px;
+        background-color: #F5F7F9;
+        display: none;
+        @include breakpoint-down(md) {
+            top: 1376px;
+            height: 1940px;
+        }
+
+        @include breakpoint-down(sm) {
+            display: inherit;
+        }
+
+        @include breakpoint-down(xss) {
+            height: 1960px;
+        }
+    }
 }
 
 #background-img {
-   @include imgProps;
+    @include imgProps;
 
     @include breakpoint-down(xs) {
         display: none;
@@ -49,7 +62,6 @@
         display: block;
     }
 }
-
 
 
 #background-img-iphone {

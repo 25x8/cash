@@ -1,0 +1,61 @@
+.presentation__cards {
+    display: flex;
+    flex-flow: row wrap;
+
+    @include breakpoint-down(sm) {
+        flex-direction: column;
+    }
+}
+
+.presentation-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-radius: 16px;
+    background: #F5F7F9;
+    flex: 1;
+    align-items: center;
+
+    &:first-child {
+        margin-right: 18px;
+
+        @include breakpoint-down(sm) {
+            margin-right: 0;
+            margin-bottom: 22px;
+        }
+    }
+
+    &:last-child {
+        margin-left: 18px;
+
+        @include breakpoint-down(sm) {
+            margin-left: 0;
+        }
+    }
+
+
+
+    &__button {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        &--figure {
+            height: 100%;
+            position: relative;
+            width: 100%;
+
+            img {
+                position: absolute;
+                top: 50%;
+                bottom: 0;
+                left: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
