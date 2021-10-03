@@ -73,6 +73,10 @@
                     display: none;
                 }
 
+                img {
+                    border: none!important;
+                }
+
                 &-mobile {
                     position: absolute;
                     bottom: 0;
@@ -80,6 +84,10 @@
                     transform: translateY(110%);
                     @include breakpoint-down(sm) {
                         display: block;
+                    }
+
+                    img {
+                        border: none!important;
                     }
                 }
 
@@ -94,6 +102,10 @@
                     display: none;
                 }
 
+                img {
+                    border: none!important;
+                }
+
                 &-mobile {
                     position: absolute;
                     bottom: 0;
@@ -101,6 +113,10 @@
                     transform: translateY(110%);
                     @include breakpoint-down(sm) {
                         display: block;
+                    }
+
+                    img {
+                        border: none!important;
                     }
                 }
             }

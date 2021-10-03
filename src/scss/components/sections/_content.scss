@@ -197,7 +197,18 @@
             height: 540px;
             width: 604px;
             transform: translateY(-44px);
-            overflow: hidden;
+
+            picture {
+                position: absolute;
+                top: 0;
+                bottom: -44px;
+                padding-bottom: 12px;
+                overflow: hidden;
+
+                @include breakpoint-down(md) {
+                    top: -10px;
+                }
+            }
 
             img {
                 transform: scale(1.5);
