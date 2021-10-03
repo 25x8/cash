@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', serif;
+  scroll-behavior: smooth;
   &:focus {
     outline: none;
   }

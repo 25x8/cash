@@ -6,7 +6,7 @@
         border-radius: 16px;
 
         p {
-            font-weight: bold;
+            font-weight: 400;
         }
 
         @include breakpoint-down(lg) {
