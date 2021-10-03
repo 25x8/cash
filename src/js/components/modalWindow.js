@@ -12,6 +12,8 @@ export function initModals(){
 
     })
 
+    document.querySelector('.welcome-background').style.display = 'inherit';
+
     initModal({
         container: document.querySelector('.modal-demo'),
         initBtns: document.querySelectorAll('[btn-modal="demo"]')
@@ -23,6 +25,7 @@ function initModal({container, initBtns}) {
     const modalWrapper = container.querySelector('.modal-wrapper');
     const closeBtn = container.querySelector('.modal-wrapper__close-btn');
     const contentContainer = container.querySelector('.modal__body');
+    const modalBody = modalWrapper.querySelector('.modal__body')
 
     modalWrapper.addEventListener('click', function (e) {
         e.stopPropagation();
@@ -38,7 +41,7 @@ function initModal({container, initBtns}) {
         };
 
         container.onclick = function () {
-            closeModal(container, contentContainer);
+            closeModal(container, modalBody);
         }
     });
 
@@ -55,14 +58,20 @@ function openModal(modal) {
     }, 300);
 }
 
-function closeModal(modal, content) {
+function closeModal(modal, modalBody) {
     const oneModal = document.querySelectorAll('.opened').length < 2;
     if(oneModal) {
         modalFade.classList.remove('show');
         body.classList.remove('open-modal');
     }
+
     modal.classList.remove('opened');
-    content.innerHTML = '';
+    document.querySelector('.welcome-background').style.display = 'inherit';
+    document.querySelector('.bye-background').style.display = 'none';
+
+    modalBody.classList.remove('good-bye');
+    modalBody.classList.add('welcome');
+
     if(oneModal) {
         setTimeout(() => {
             modalFade.remove();

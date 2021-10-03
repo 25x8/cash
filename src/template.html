@@ -512,16 +512,26 @@
 </footer>
 <div class="modal-window modal-demo">
     <div class="modal-wrapper">
-        <div class="modal-wrapper__background">
+        <div class="modal-wrapper__background welcome-background">
             <picture>
                 <img class="" src="<%=require('./assets/images/demo/demo-background.png')%>"
                      alt="Просто и понятно">
             </picture>
         </div>
+
+        <div class="modal-wrapper__background bye-background">
+            <picture>
+                <img class="" src="<%=require('./assets/images/demo/demo-background-bye.png')%>"
+                     alt="Просто и понятно">
+            </picture>
+        </div>
+
         <div class="modal__content">
             <div class="modal-wrapper__close-btn"></div>
-            <div class="modal__body">
-
+            <div class="modal__body welcome">
+                <div class="loader">
+                    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
                 <div class="welcome-block">
                     <div class="welcome-block__title">
                         Добро пожаловать!
@@ -583,10 +593,44 @@
                             </div>
 
                             <div class="rate__amount--pay">
-                                <button class="btn btn__square btn__third">Оплатить картой</button>
+                                <button class="btn btn__square btn__third" btn-action="bye">Оплатить картой</button>
                             </div>
 
+                            <div class="rate__amount--checks">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="costs-check"
+                                           aria-describedby="costs" checked required>
+                                    <label id="costs" class="form-check-label" for="costs">
+                                        Я хочу взять на себя транзакционные издержки (7р.), чтобы сотрудник получил
+                                        полную
+                                        сумму
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="personal-check"
+                                           aria-describedby="personal" checked required>
+                                    <label id="personal" class="form-check-label" for="personal-check">
+                                        Согласен с условиями Пользовательского сограшения и Политикой обработки
+                                        персональных данных
+                                    </label>
+                                </div>
+                            </div>
+
+
                         </div>
+                    </div>
+                    <dov class="rate-block__text">
+                        Александр из Чартер Паб принимает чаевые по QR-коду и отзывы через “qr.cafe”
+                    </dov>
+                </div>
+
+                <div class="good-bye-block">
+                    <div class="welcome-block__title">
+                        Cпасибо!
+                    </div>
+                    <div class="welcome-block__title">
+                        Ждем вас снова!
                     </div>
                 </div>
             </div>

@@ -14,9 +14,16 @@ document.body.onload = () => {
     initDropdown();
     initNextPageAction({
         button: document.querySelector('[btn-action="continue"]'),
-        curPage: document.querySelector('.welcome-block'),
-        nextPage: document.querySelector('.rate-block'),
-        background: document.querySelector('.modal-wrapper__background')
+        curPage: 'welcome',
+        nextPage: 'rate',
+        background: document.querySelector('.welcome-background')
+    });
+
+    initNextPageAction({
+        button: document.querySelector('[btn-action="bye"]'),
+        curPage: 'rate',
+        nextPage: 'good-bye',
+        background: document.querySelector('.bye-background')
     });
     initTipButtons();
 };
