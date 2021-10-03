@@ -111,6 +111,10 @@
                 padding-bottom: 8px;
             }
 
+            .card--text {
+                width: 90%;
+            }
+
 
             &--img {
                 height: 140px;
@@ -119,6 +123,7 @@
                 picture {
                     position: absolute;
                     right: 0;
+                    left: 60%;
                 }
             }
         }
@@ -242,6 +247,22 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 24px;
+        position: relative;
+
+        @include breakpoint-down(md) {
+           margin-top: 54px;
+        }
+
+        @include breakpoint-down(sm) {
+            display: grid;
+            grid-template-columns: 1fr 0.7fr;
+        }
+
+        @include breakpoint-down(xs) {
+            display: block;
+            max-width: 100%;
+        }
 
         .best__list {
             max-width: 548px;
@@ -250,20 +271,18 @@
                 max-width: 450px;
             }
 
-            @include breakpoint-down(xs) {
-                max-width: 340px;
+            @include breakpoint-down(sm) {
+
+                h2 {
+                    margin-bottom: 0;
+                }
             }
-
-            @include breakpoint-down(xss) {
-                max-width: 100%;
-            }
-
-
         }
 
         .best__image {
-            width: 540px;
-            height: 548px;
+            width: 558px;
+            height: 469px;
+
 
             img {
                 height: 100%;
@@ -273,16 +292,23 @@
             @include breakpoint-down(md) {
 
                 width: 451px;
-                height: 457px;
+                height: 378px;
 
                 img {
                     width: 100%
                 }
             }
 
+            @include breakpoint-down(sm) {
+                width: 450px;
+                height: 378px;
+                position: absolute;
+                right: 0;
+                z-index: -1;
+            }
+
             @include breakpoint-down(xs) {
-                width: 340px;
-                height: 345px;
+                display: none;
             }
 
             @include breakpoint-down(xss) {
@@ -290,6 +316,90 @@
             }
 
         }
+    }
+
+    &__faq {
+        display: flex;
+
+        .simple__image {
+            width: 474px;
+            position: relative;
+
+            @include breakpoint-down(md) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include breakpoint-down(sm) {
+                display: none;
+            }
+
+            picture {
+
+                position: absolute;
+                top: -15%;
+
+                img {
+                    width: 474px;
+                    height: 502px;
+
+                    @include breakpoint-down(md) {
+                        width: 442px;
+                        height: 452px;
+                    }
+
+                }
+
+                @include breakpoint-down(md) {
+                    top: 0;
+                }
+
+                @include breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+
+        .simple__list {
+            padding-left: 235px;
+
+            @include breakpoint-down(md) {
+                padding-left: 0;
+                max-width: 454px;
+            }
+
+            @include breakpoint-down(sm) {
+                max-width: 100%;
+            }
+        }
+
+
+        .background-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            transform: translateY(-28px);
+            height: 489px;
+            background: #F5F7F9;
+            z-index: -1;
+
+            @include breakpoint-down(md) {
+                height: 524px;
+            }
+
+            @include breakpoint-down(sm) {
+                height: 445px;
+            }
+
+            @include breakpoint-down(xss) {
+                height: 455px;
+            }
+
+            @include breakpoint-down(iphone) {
+                height: 520px;
+            }
+        }
+
     }
 
     &__certificates {

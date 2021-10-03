@@ -12,6 +12,15 @@
 
         .list-content--text {
             color: #A7A7A7;
+            min-width: 500px;
+
+            @include breakpoint-down(md) {
+                min-width: 450px;
+            }
+
+            @include breakpoint-down(sm) {
+                min-width: auto;
+            }
         }
 
         @include breakpoint-down(sm) {
@@ -19,10 +28,16 @@
         }
 
         @include breakpoint-down(iphone) {
-            height: 105px;
+            height: auto;
         }
 
 
+    }
+}
+
+.content__best {
+    .list-content li {
+        background: transparent;
     }
 }
 
@@ -42,6 +57,7 @@
     .list-content {
         &--icon {
             padding: 0 16px;
+
             img {
                 margin-top: 4px;
             }

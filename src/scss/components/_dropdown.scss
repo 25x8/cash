@@ -1,0 +1,31 @@
+.dropdown {
+    &-item {
+
+        margin: 32px 0;
+        color: #A7A7A7;
+
+        &--header {
+            cursor: pointer;
+            text-decoration-line: underline;
+
+            &.item-opened {
+                color: #27AE60;
+            }
+        }
+
+        &--content {
+            transition: height 300ms;
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+
+
+    }
+}
+
+.item-opened + .dropdown-item--content {
+    height: 30px;
+}
