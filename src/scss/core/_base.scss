@@ -2,6 +2,8 @@
   box-sizing: border-box;
   font-family: 'Open Sans', serif;
   scroll-behavior: smooth;
+  margin:0;
+  padding:0;
   &:focus {
     outline: none;
   }
