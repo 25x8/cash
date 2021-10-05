@@ -238,6 +238,7 @@
 
                 .text__content {
                     font-weight: normal;
+                    margin-bottom: 16px;
                 }
             }
 
@@ -302,7 +303,7 @@
             @include breakpoint-down(sm) {
 
                 h2 {
-                    margin-bottom: 0;
+                    margin-bottom: 16px;
                 }
             }
         }
