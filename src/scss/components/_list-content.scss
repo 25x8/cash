@@ -3,12 +3,16 @@
     padding-left: 0;
 
     li {
-        background: #F5F7F9;
+
         border-radius: 16px;
         display: flex;
         height: 66px;
         align-items: center;
         margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 24px;
+        }
 
         &.active {
             .list-content--text,
@@ -22,7 +26,7 @@
             min-width: 500px;
 
             @include breakpoint-down(md) {
-                min-width: 450px;
+                min-width: 400px;
             }
 
             @include breakpoint-down(sm) {
@@ -36,7 +40,7 @@
         }
 
         @include breakpoint-down(iphone) {
-            height: auto;
+            height: 100px;
         }
 
 
@@ -72,4 +76,11 @@
         }
     }
 }
+
+
+.simple__list .simple__list--ul li,
+.content__best--first  .best__list--ul li {
+    background: #F5F7F9;
+}
+
 

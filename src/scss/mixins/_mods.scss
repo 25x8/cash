@@ -22,11 +22,11 @@
         }
 
         .mode__mb--#{$i} {
-            margin-bottom: $margin;
+            margin-bottom: $margin!important;
         }
 
         .mode__mt--#{$i} {
-            margin-top: $margin;
+            margin-top: $margin!important;
         }
 
 

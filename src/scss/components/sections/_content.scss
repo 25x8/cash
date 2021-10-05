@@ -142,6 +142,7 @@
         box-sizing: border-box;
         border-radius: 16px;
         padding-left: 24px;
+        padding-right: 0;
         background-color: white;
 
         .swiper-card-account {
@@ -150,7 +151,7 @@
 
         @include breakpoint-down(sm) {
 
-                padding-left: 20px;
+                padding-left: 0px;
 
         }
 
@@ -279,6 +280,10 @@
         margin-top: 24px;
         position: relative;
 
+        h2 {
+            margin-bottom: 24px;
+        }
+
         @include breakpoint-down(md) {
            margin-top: 54px;
         }
@@ -302,9 +307,7 @@
 
             @include breakpoint-down(sm) {
 
-                h2 {
-                    margin-bottom: 16px;
-                }
+
             }
         }
 

@@ -24,7 +24,7 @@
         display: none;
         @include breakpoint-down(md) {
             top: 1376px;
-            height: 1940px;
+            height: 1800px;
         }
 
         @include breakpoint-down(sm) {
