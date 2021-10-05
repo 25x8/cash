@@ -37,7 +37,6 @@
         color: $colors--first;
         width: 100%;
         margin: 24px;
-
         text-align: center;
 
         input {
@@ -46,6 +45,7 @@
             color: #27AE60;
             font-size: 40px;
             padding: 22px 34px;
+            text-align: center;
         }
 
         @include breakpoint-down(xss) {
@@ -171,7 +171,7 @@
                     .calc--val {
                         font-size: 40px;
                         font-weight: bold;
-                        margin-bottom: 6px;
+                        padding-bottom: 6px;
                         border-bottom: 3px solid #EEEEEE
                     }
 
@@ -179,7 +179,7 @@
                 }
 
                 &--val-btns {
-                    margin-top: 16px;
+
                     .btn__tip {
 
                     }
